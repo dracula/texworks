@@ -1,0 +1,301 @@
+/* 
+ * Original Work: darkbg.css from texworks-dark-theme (https://github.com/ezellohar/texworks-dark-theme)
+ * Original copyright © GitHub user ezellohar
+ * Modifications by Wᴏɴɢ Chung, 2025
+ * Licensed under GNU General Public License v3.0 (GPL-3.0)
+ */
+
+/* QWidget: main interface colors */
+QWidget {
+    background-color: #222222;
+	selection-background-color: #555555;
+    color: #cccccc;
+	selection-color: white;
+}
+
+/* QTextEdit: the actual text editor window*/
+QTextEdit {
+    background-color: #000000;  
+    color: white;
+	selection-background-color: #555555;
+	selection-color: white;
+}
+
+
+/* QComboBox refers to drop-down menus (such as when selecting pdfTeX, pdfLaTeX, XeTeX, etc.) */
+QComboBox {
+    border: 1px solid gray;
+    padding: 2px 18px 4px 6px;
+    border-radius: 4px;
+}
+
+/* drop-down: the arrow frame */
+QComboBox::drop-down { 
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left-width: 1px;
+    border-left-color: #eeeeee;
+    border-left-style: solid;
+}
+
+/* the menu once opened */
+QComboBox QAbstractItemView {
+    border: 2px solid darkgray;
+    selection-background-color: #333333;
+	background-color: black;
+}
+
+QComboBox::down-arrow {
+    image: url(./res/downarrow.png);
+	width: 10px;
+	height: 10px;
+}
+
+QComboBox::down-arrow:on {
+    top: 1px;
+    left: 1px;
+}
+
+/* QMenuBar refers to the menu at the top (File, Edit, etc.)
+   QMenu::item refers to the items under the menu
+ */
+QMenu::item:selected {
+    background-color: #333333;
+}
+
+QMenuBar::item:pressed,  QMenuBar::item:selected {
+    background: #333333;
+}
+
+/*	QScrollBar: handles scroll bars. Must be doubled for vertical and horizontal
+	handle is the moving part. add-line is the region where the arrow is drawn.
+	If no image is embedded, the arrow is a dot.
+*/
+QScrollBar:vertical { 
+    background: #111111;
+    width: 15px;
+    margin: 20px 0 20px 0;
+}
+QScrollBar::handle:vertical {
+    background: #555555;
+    min-height: 20px;
+}
+QScrollBar::add-line:vertical {
+     border: none;
+     background: #333333;
+     height: 20px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+     border: none;
+     background: #333333;
+     height: 20px;
+     subcontrol-position: top;
+     subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:pressed {
+	background: #444444;
+}
+QScrollBar::sub-line:vertical:pressed {
+	background: #444444;
+}
+QScrollBar::up-arrow:vertical {
+    image: url(./res/uparrow.png);
+	border: none;
+	width: 8px;
+	height: 8px;
+	padding: 12px;
+}
+QScrollBar::down-arrow:vertical {
+    image: url(./res/downarrow.png);
+	border: none;
+	width: 8px;
+	height: 8px;
+	padding: 12px;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical { 
+    /* this seems useless, but it is actually quite important- 
+       it makes the scroll bar's background a uniform color instead
+       of tiny dots, if it were removed. */
+    background: none;
+}
+
+QScrollBar:horizontal {
+    background: #111111;
+    height: 15px;
+    margin: 0 20px 0 20px;
+}
+QScrollBar::handle:horizontal {
+    background: #555555;
+    min-width: 20px;
+}
+QScrollBar::add-line:horizontal {
+     border: none;
+     background: #333333;
+    width: 20px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:horizontal {
+     border: none;
+     background: #333333;
+    width: 20px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+QScrollBar::add-line:horizontal:pressed {
+	background: #444444;
+}
+QScrollBar::sub-line:horizontal:pressed {
+	background: #444444;
+}
+QScrollBar:left-arrow:horizontal {
+    image: url(./res/leftarrow.png);
+	border: none;
+	width: 8px;
+	height: 8px;
+	padding: 12px;
+}
+QScrollBar::right-arrow:horizontal {
+    image: url(./res/rightarrow.png);
+	border: none;
+	width: 8px;
+	height: 8px;
+	padding: 12px;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal { 
+    background: none;
+}
+
+/* QSizeGrip: corner image to resize window */
+QSizeGrip {
+	image: url(./res/sizegrip.png);
+	background: none;
+}
+
+/* QTabWidget: the tab bar frame, needed for QTabBar styling */
+QTabWidget::pane {
+    border: 1px solid #333333;
+}
+QTabWidget::tab-bar {
+    left: 5px; /* move to the right by 5px */
+}
+
+/* Buttons in prefs menu. It styles also the console close button if not specified*/
+QTabWidget QToolButton {
+	background-color: #444444;
+	margin: 2px;
+	padding: 1px;
+}
+QTabWidget QToolButton:hover {
+    background-color: #555555;
+}
+
+/* QTabBar: tabs (Preferences, console output) */
+QTabBar::tab {
+    background: #222222;
+    border: 1px solid #555555;
+	border-bottom-color: #333333; /* same as pane color */
+	min-width: 8ex;
+    padding: 4px 8px 4px 8px;
+}
+QTabBar::tab:selected {
+    background: #333333;
+	color: #ffffff;
+	border-color: #555555;
+    border-bottom-color: #333333; /* same as pane color */
+}
+QTabBar::tab:hover {
+    background: #444444;
+}
+/* make non-selected tabs look smaller */
+QTabBar::tab:!selected {
+    margin-top: 2px;
+}
+
+Tw--UI--ClosableTabWidget QToolButton {
+    qproperty-icon: url(./res/close.png); /* image tag not working */
+    background-color: #333333;
+}
+Tw--UI--ClosableTabWidget QToolButton:hover {
+    background-color: #800000;
+}
+
+
+/* QDockWidget: search results window*/
+QDockWidget {
+    border: 1px solid lightgray;
+	titlebar-close-icon: url(./res/close.png);
+    titlebar-normal-icon: url(./res/undock.png);
+}
+
+QDockWidget::title {
+    text-align: left;
+    background: #222222;
+    padding-left: 5px;
+}
+
+QDockWidget::close-button, QDockWidget::float-button {
+    border: 1px solid transparent;
+    background: none;
+    padding: 0px;
+}
+
+QDockWidget::float-button:hover {
+    background: #444444;
+}
+
+QDockWidget::close-button:hover {
+    background: #800000;
+}
+
+/* QHeaderView: search results header row */
+QHeaderView::section  {
+	background-color: #222222;
+	border-right: 1px solid lightgray;
+	border-left: 1px solid lightgray;
+	color: white;
+    padding-left: 4px;
+}
+QHeaderView::section:hover  {
+	background-color: #444444;
+}
+
+/* QTableView: search results rows */
+QTableView {
+   background-color: #111111;
+   alternate-background-color: #222222;
+   selection-background-color: #555555;
+   font-color: #FFFFFF;
+}
+
+/* QToolButton: buttons with images (under menu) */
+QToolButton:hover {
+    background-color: #444444;
+}
+
+/* QPushButton: buttons with text (ok, cancel...) */
+QPushButton {
+    background-color: #222222;
+    border-style: outset;
+    border-width: 1px;
+    border-color: #555555;
+    padding: 4px;
+}
+QPushButton:pressed {
+    background-color: #555555;
+	border-style: inset;
+    border-width: 1px;
+    border-color: #555555;
+    padding: 4px;
+}
+QPushButton:hover {
+	background-color: #444444;
+}
+
+Tw--UI--ScreenCalibrationWidget {
+	color: #FFFFFF;
+	background-color: #333333;
+}
