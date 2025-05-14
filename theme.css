@@ -5,7 +5,11 @@
  * Licensed under GNU General Public License v3.0 (GPL-3.0)
  */
 
-/* QWidget: main interface colors */
+/* 
+ * QWidget:
+ *     Main interface colors
+ *     主界面颜色
+ */
 QWidget {
     background-color: #222222;
 	selection-background-color: #555555;
@@ -13,7 +17,11 @@ QWidget {
 	selection-color: white;
 }
 
-/* QTextEdit: the actual text editor window*/
+/* 
+ * QTextEdit:
+ *     The actual text editor window
+ *     文本编辑器窗口
+ */
 QTextEdit {
     background-color: #282a36;  
     color: #f8f8f2;
@@ -21,15 +29,22 @@ QTextEdit {
 	selection-color: #f8f8f2;
 }
 
-
-/* QComboBox refers to drop-down menus (such as when selecting pdfTeX, pdfLaTeX, XeTeX, etc.) */
+/* 
+ * QComboBox:
+ *     It refers to drop-down menus (such as when selecting pdfTeX, pdfLaTeX, XeTeX, etc.)
+ *     下拉菜单(如选择pdfTeX/pdfLaTeX/XeTeX等)
+ */
 QComboBox {
     border: 1px solid gray;
     padding: 2px 18px 4px 6px;
     border-radius: 4px;
 }
 
-/* drop-down: the arrow frame */
+/* 
+ * drop-down:
+ *     The drop-arrow frame
+ *     下拉箭头区域
+ */
 QComboBox::drop-down { 
     subcontrol-origin: padding;
     subcontrol-position: top right;
@@ -39,26 +54,42 @@ QComboBox::drop-down {
     border-left-style: solid;
 }
 
-/* the menu once opened */
+/* 
+ * The menu once opened
+ * 展开后的下拉菜单
+ */
 QComboBox QAbstractItemView {
     border: 2px solid darkgray;
     selection-background-color: #333333;
 	background-color: black;
 }
 
+/* 
+ * The drop-down arrow icon
+ * 下拉箭头图标
+ */
 QComboBox::down-arrow {
     image: url(./res/downarrow.png);
 	width: 10px;
 	height: 10px;
 }
 
+/* 
+ * The drop-down arrow that is currently in use
+ * 按下状态的下拉箭头
+ */
 QComboBox::down-arrow:on {
     top: 1px;
     left: 1px;
 }
 
-/* QMenuBar refers to the menu at the top (File, Edit, etc.)
-   QMenu::item refers to the items under the menu
+/* 
+ * QMenuBar:
+ *     It refers to the menu at the top (File, Edit, etc.)
+ *     顶部菜单栏(文件/编辑等)
+ * QMenu::item 
+ *     It refers to the items under the menu
+ *     菜单项
  */
 QMenu::item:selected {
     background-color: #333333;
@@ -68,19 +99,27 @@ QMenuBar::item:pressed,  QMenuBar::item:selected {
     background: #333333;
 }
 
-/*	QScrollBar: handles scroll bars. Must be doubled for vertical and horizontal
-	handle is the moving part. add-line is the region where the arrow is drawn.
-	If no image is embedded, the arrow is a dot.
-*/
+/* QScrollBar:
+ *     handles scroll bars. It must be doubled for vertical and horizontal
+ *     滚动条控件（需分别设置垂直/水平）
+ * handle:
+ *     It is the moving part
+ *     滑块部分
+ * add-line:
+ *     Add-line is the region where the arrow is drawn. If no image is embedded, the arrow is a dot.
+ *     箭头所在区域(若无图片则显示圆点)
+ */
 QScrollBar:vertical { 
     background: #111111;
     width: 15px;
     margin: 20px 0 20px 0;
 }
+
 QScrollBar::handle:vertical {
     background: #555555;
     min-height: 20px;
 }
+
 QScrollBar::add-line:vertical {
      border: none;
      background: #333333;
@@ -88,6 +127,7 @@ QScrollBar::add-line:vertical {
      subcontrol-position: bottom;
      subcontrol-origin: margin;
 }
+
 QScrollBar::sub-line:vertical {
      border: none;
      background: #333333;
@@ -95,12 +135,15 @@ QScrollBar::sub-line:vertical {
      subcontrol-position: top;
      subcontrol-origin: margin;
 }
+
 QScrollBar::add-line:vertical:pressed {
 	background: #444444;
 }
+
 QScrollBar::sub-line:vertical:pressed {
 	background: #444444;
 }
+
 QScrollBar::up-arrow:vertical {
     image: url(./res/uparrow.png);
 	border: none;
@@ -108,6 +151,7 @@ QScrollBar::up-arrow:vertical {
 	height: 8px;
 	padding: 12px;
 }
+
 QScrollBar::down-arrow:vertical {
     image: url(./res/downarrow.png);
 	border: none;
@@ -115,22 +159,31 @@ QScrollBar::down-arrow:vertical {
 	height: 8px;
 	padding: 12px;
 }
+
+/* 
+ * This seems useless, but it is actually quite important
+ * --it makes the scroll bar's background a uniform color instead of tiny dots, if it were removed.
+ * 此属性看似无用，实则关键——移除后滚动条背景会变成散点而非纯色
+ */
 QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical { 
-    /* this seems useless, but it is actually quite important- 
-       it makes the scroll bar's background a uniform color instead
-       of tiny dots, if it were removed. */
     background: none;
 }
 
+/* 
+ * Horizontal scroll bar
+ * 水平滚动条
+ */
 QScrollBar:horizontal {
     background: #111111;
     height: 15px;
     margin: 0 20px 0 20px;
 }
+
 QScrollBar::handle:horizontal {
     background: #555555;
     min-width: 20px;
 }
+
 QScrollBar::add-line:horizontal {
      border: none;
      background: #333333;
@@ -138,6 +191,7 @@ QScrollBar::add-line:horizontal {
     subcontrol-position: right;
     subcontrol-origin: margin;
 }
+
 QScrollBar::sub-line:horizontal {
      border: none;
      background: #333333;
@@ -145,12 +199,15 @@ QScrollBar::sub-line:horizontal {
     subcontrol-position: left;
     subcontrol-origin: margin;
 }
+
 QScrollBar::add-line:horizontal:pressed {
 	background: #444444;
 }
+
 QScrollBar::sub-line:horizontal:pressed {
 	background: #444444;
 }
+
 QScrollBar:left-arrow:horizontal {
     image: url(./res/leftarrow.png);
 	border: none;
@@ -158,6 +215,7 @@ QScrollBar:left-arrow:horizontal {
 	height: 8px;
 	padding: 12px;
 }
+
 QScrollBar::right-arrow:horizontal {
     image: url(./res/rightarrow.png);
 	border: none;
@@ -165,66 +223,92 @@ QScrollBar::right-arrow:horizontal {
 	height: 8px;
 	padding: 12px;
 }
+
 QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal { 
     background: none;
 }
 
-/* QSizeGrip: corner image to resize window */
+/* 
+ * QSizeGrip:
+ *     Corner image to resize window
+ *     窗口缩放角标
+ */
 QSizeGrip {
 	image: url(./res/sizegrip.png);
 	background: none;
 }
 
-/* QTabWidget: the tab bar frame, needed for QTabBar styling */
+/* 
+ * QTabWidget:
+ *     The tab bar frame, needed for QTabBar styling
+ *     标签页容器框架
+ */
 QTabWidget::pane {
     border: 1px solid #333333;
 }
+
 QTabWidget::tab-bar {
-    left: 5px; /* move to the right by 5px */
+    left: 5px; /* Move to the right by 5px 向右偏移5像素 */
 }
 
-/* Buttons in prefs menu. It styles also the console close button if not specified*/
+/* 
+ * Buttons in prefs menu. It styles also the console close button if not specified
+ * 偏好设置中的按钮(未单独指定时也会影响控制台关闭按钮)
+ */
 QTabWidget QToolButton {
 	background-color: #444444;
 	margin: 2px;
 	padding: 1px;
 }
+
 QTabWidget QToolButton:hover {
     background-color: #555555;
 }
 
-/* QTabBar: tabs (Preferences, console output) */
+/* QTabBar:
+ *      Tabs (preferences, console output)
+ *      选项卡(首选项，控制台输出)
+ */
 QTabBar::tab {
     background: #222222;
     border: 1px solid #555555;
-	border-bottom-color: #333333; /* same as pane color */
+	border-bottom-color: #333333; /* Same as pane color 与窗格颜色相同 */
 	min-width: 8ex;
     padding: 4px 8px 4px 8px;
 }
+
 QTabBar::tab:selected {
     background: #333333;
 	color: #ffffff;
 	border-color: #555555;
-    border-bottom-color: #333333; /* same as pane color */
+    border-bottom-color: #333333; /* Same as pane color 与窗格颜色相同 */
 }
+
 QTabBar::tab:hover {
     background: #444444;
 }
-/* make non-selected tabs look smaller */
+
+/* 
+ * Make non-selected tabs look smaller
+ * 使未选定的选项卡看起来更小
+ */
 QTabBar::tab:!selected {
     margin-top: 2px;
 }
 
 Tw--UI--ClosableTabWidget QToolButton {
-    qproperty-icon: url(./res/close.png); /* image tag not working */
+    qproperty-icon: url(./res/close.png); /* image tag not working 不运行的图像标签 */
     background-color: #333333;
 }
 Tw--UI--ClosableTabWidget QToolButton:hover {
     background-color: #800000;
 }
 
-
-/* QDockWidget: search results window*/
+/* 
+ * QDockWidget:
+ *     Search results window
+ *     搜索结果窗口
+ */
 QDockWidget {
     border: 1px solid lightgray;
 	titlebar-close-icon: url(./res/close.png);
@@ -251,7 +335,11 @@ QDockWidget::close-button:hover {
     background: #800000;
 }
 
-/* QHeaderView: search results header row */
+/* 
+ * QHeaderView:
+ *     Search results header row
+ *     搜索结果标题行
+ */
 QHeaderView::section  {
 	background-color: #222222;
 	border-right: 1px solid lightgray;
@@ -259,11 +347,16 @@ QHeaderView::section  {
 	color: white;
     padding-left: 4px;
 }
+
 QHeaderView::section:hover  {
 	background-color: #444444;
 }
 
-/* QTableView: search results rows */
+/* 
+ * QTableView:
+ *     Search results rows
+ *     搜索结果行
+ */
 QTableView {
    background-color: #111111;
    alternate-background-color: #222222;
@@ -271,12 +364,20 @@ QTableView {
    font-color: #FFFFFF;
 }
 
-/* QToolButton: buttons with images (under menu) */
+/* 
+ * QToolButton:
+ *     Buttons with images (under menu)
+ *     带图像的按钮(在菜单下)
+ */
 QToolButton:hover {
     background-color: #444444;
 }
 
-/* QPushButton: buttons with text (ok, cancel...) */
+/* 
+ * QPushButton:
+ *     Buttons with text (ok, cancel...)
+ *     带文本的按钮(确定，取消...)
+ */
 QPushButton {
     background-color: #222222;
     border-style: outset;
@@ -284,6 +385,7 @@ QPushButton {
     border-color: #555555;
     padding: 4px;
 }
+
 QPushButton:pressed {
     background-color: #555555;
 	border-style: inset;
@@ -291,6 +393,7 @@ QPushButton:pressed {
     border-color: #555555;
     padding: 4px;
 }
+
 QPushButton:hover {
 	background-color: #444444;
 }
