@@ -15,10 +15,10 @@ QWidget {
 
 /* QTextEdit: the actual text editor window*/
 QTextEdit {
-    background-color: #000000;  
-    color: white;
-	selection-background-color: #555555;
-	selection-color: white;
+    background-color: #282a36;  
+    color: #f8f8f2;
+	selection-background-color: #44475a;
+	selection-color: #f8f8f2;
 }
 
 
