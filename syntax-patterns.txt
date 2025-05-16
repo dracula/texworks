@@ -1,5 +1,5 @@
 # Original Work: syntax-patterns.txt from texworks (https://github.com/TeXworks/texworks)
-# Original copyright © Stefan Löffler, Jonathan Kew, and Charlie Sharpsteen
+# Original copyright © Stefan Löffler, Jonathan Kew, and Charlie Sharpsteen, 2007-2025
 # Modifications by Wᴏɴɢ Chung, 2025-05-16 (1st modification)
 # Licensed under GNU General Public License v3.0 (GPL-3.0)
 
