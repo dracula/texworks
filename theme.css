@@ -70,8 +70,8 @@ QComboBox QAbstractItemView {
  */
 QComboBox::down-arrow {
     image: url(./src/down-arrow.png);
-	width: 10px;
-	height: 10px;
+	width: 16px;
+	height: 16px;
 }
 
 /* 
@@ -147,17 +147,15 @@ QScrollBar::sub-line:vertical:pressed {
 QScrollBar::up-arrow:vertical {
     image: url(./src/up-arrow.png);
 	border: none;
-	width: 8px;
-	height: 8px;
-	padding: 12px;
+	width: 12px;
+	height: 12px;
 }
 
 QScrollBar::down-arrow:vertical {
     image: url(./src/down-arrow.png);
 	border: none;
-	width: 8px;
-	height: 8px;
-	padding: 12px;
+	width: 12px;
+	height: 12px;
 }
 
 /* 
@@ -211,17 +209,15 @@ QScrollBar::sub-line:horizontal:pressed {
 QScrollBar:left-arrow:horizontal {
     image: url(./src/left-arrow.png);
 	border: none;
-	width: 8px;
-	height: 8px;
-	padding: 12px;
+	width: 12px;
+	height: 12px;
 }
 
 QScrollBar::right-arrow:horizontal {
     image: url(./src/right-arrow.png);
 	border: none;
-	width: 8px;
-	height: 8px;
-	padding: 12px;
+	width: 12px;
+	height: 12px;
 }
 
 QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal { 
@@ -235,6 +231,8 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
  */
 QSizeGrip {
 	image: url(./src/size-grip.png);
+	width: 12px;
+	height: 12px;
 	background: none;
 }
 
