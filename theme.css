@@ -69,7 +69,7 @@ QComboBox QAbstractItemView {
  * 下拉箭头图标
  */
 QComboBox::down-arrow {
-    image: url(./res/downarrow.png);
+    image: url(./src/down-arrow.png);
 	width: 10px;
 	height: 10px;
 }
@@ -145,7 +145,7 @@ QScrollBar::sub-line:vertical:pressed {
 }
 
 QScrollBar::up-arrow:vertical {
-    image: url(./res/uparrow.png);
+    image: url(./src/up-arrow.png);
 	border: none;
 	width: 8px;
 	height: 8px;
@@ -153,7 +153,7 @@ QScrollBar::up-arrow:vertical {
 }
 
 QScrollBar::down-arrow:vertical {
-    image: url(./res/downarrow.png);
+    image: url(./src/down-arrow.png);
 	border: none;
 	width: 8px;
 	height: 8px;
@@ -209,7 +209,7 @@ QScrollBar::sub-line:horizontal:pressed {
 }
 
 QScrollBar:left-arrow:horizontal {
-    image: url(./res/leftarrow.png);
+    image: url(./src/left-arrow.png);
 	border: none;
 	width: 8px;
 	height: 8px;
@@ -217,7 +217,7 @@ QScrollBar:left-arrow:horizontal {
 }
 
 QScrollBar::right-arrow:horizontal {
-    image: url(./res/rightarrow.png);
+    image: url(./src/right-arrow.png);
 	border: none;
 	width: 8px;
 	height: 8px;
@@ -234,7 +234,7 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
  *     窗口缩放角标
  */
 QSizeGrip {
-	image: url(./res/sizegrip.png);
+	image: url(./src/size-grip.png);
 	background: none;
 }
 
@@ -297,7 +297,7 @@ QTabBar::tab:!selected {
 }
 
 Tw--UI--ClosableTabWidget QToolButton {
-    qproperty-icon: url(./res/close.png); /* image tag not working 不运行的图像标签 */
+    qproperty-icon: url(./src/close.png); /* image tag not working 不运行的图像标签 */
     background-color: #333333;
 }
 Tw--UI--ClosableTabWidget QToolButton:hover {
@@ -311,8 +311,8 @@ Tw--UI--ClosableTabWidget QToolButton:hover {
  */
 QDockWidget {
     border: 1px solid lightgray;
-	titlebar-close-icon: url(./res/close.png);
-    titlebar-normal-icon: url(./res/undock.png);
+	titlebar-close-icon: url(./src/close.png);
+    titlebar-normal-icon: url(./src/undock.png);
 }
 
 QDockWidget::title {
