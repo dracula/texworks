@@ -38,16 +38,16 @@
 
 [LaTeX]
 # special characters
-red		N	[$#^_{}&]
+ #BD93F9		N	[$#^_{}&]
 
 # LaTeX environments
-olive	N	\\(?:begin|end)\s*\{[^\}]*\}
+ #8BE9FD	N	\\(?:begin|end)\s*\{[^\}]*\}
 
 # LaTeX packages
-mediumorchid	N	\\usepackage\s*(?:\[[^\]]*\]\s*)?\{[^\}]*\}
+ #FF79C6	N	\\usepackage\s*(?:\[[^\]]*\]\s*)?\{[^\}]*\}
 
 # control sequences
-royalblue	N	\\(?:[\p{L}@]+|.)
+ #50FA7B	N	\\(?:[\p{L}@]+|.)
 
 # comments
  #6272A4		Y	%.*
