@@ -50,7 +50,7 @@ mediumorchid	N	\\usepackage\s*(?:\[[^\]]*\]\s*)?\{[^\}]*\}
 royalblue	N	\\(?:[\p{L}@]+|.)
 
 # comments
-gray		Y	%.*
+ #6272A4		Y	%.*
 
 [ConTeXt]
 # special characters
