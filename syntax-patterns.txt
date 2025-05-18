@@ -52,6 +52,9 @@ royalblue	N	\\(?:[\p{L}@]+|.)
 # comments
  #6272A4		Y	%.*
 
+# arguments
+ #FFB86C;I	N	(?<=\{)[^{}]*?(?=\})|(?<=\[)[^\[\]]*?(?=\])
+
 [ConTeXt]
 # special characters
 red		N	[${}]
