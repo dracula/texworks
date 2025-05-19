@@ -41,13 +41,13 @@
  #BD93F9		N	[$#^_{}&]
 
 # LaTeX environments
- #8BE9FD	N	\\(?:begin|end)
+ #50FA7B	N	\\(?:begin|end)
 
 # LaTeX packages
  #FF79C6	N	\\usepackage
 
 # control sequences
- #50FA7B	N	\\(?:[\p{L}@]+|.)
+ #8BE9FD	N	\\(?:[\p{L}@]+|.)
 
 # comments
  #6272A4		Y	%.*
