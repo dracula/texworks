@@ -46,6 +46,9 @@
 # LaTeX packages
  #FF79C6	N	\\usepackage
 
+# math modes
+ #F1FA8C;I	N	\$\$[^$]*?\$\$|\$[^$]*?\$|\\\([^)]*?\\\)|\\\[[^\]]*?\\\]
+
 # control sequences
  #8BE9FD	N	\\(?:[\p{L}@]+|.)
 
