@@ -5,7 +5,7 @@ This project includes code from the following source:
 
 Modifications:
 - Renamed original CSS file to theme.css
-- Redesigned UI layouts
+- Redesigned UI appearance
 - Updated palettes based on Dracula Color Palette Standard
 - Updated patterns syntax setting based on Dracula Syntax Highlighting Specification
 - Added and Updated comments
