@@ -38,7 +38,7 @@
 
 [LaTeX]
 # special characters
- #BD93F9		N	[$#^_{}&]
+ #BD93F9		N	[#^_{}\[\]|&]
 
 # LaTeX environments
  #50FA7B	N	\\(?:begin|end)
