@@ -11,10 +11,10 @@
  *     主界面颜色
  */
 QWidget {
-    background-color: #222222;
-	selection-background-color: #555555;
-    color: #cccccc;
-	selection-color: white;
+    background-color: #282a36;
+    color: #f8f8f2;
+	selection-background-color: #44475a;
+	selection-color: #f8f8f2;
 }
 
 /* 
