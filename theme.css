@@ -90,7 +90,7 @@ QComboBox::down-arrow:on {
  *     顶部菜单栏(文件/编辑等)
  * QMenu::item 
  *     It refers to the items under the menu
- *     菜单项
+ *     下拉菜单项
  */
 QMenu::item:selected {
     background-color: #333333;
