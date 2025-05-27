@@ -36,7 +36,7 @@ QTextEdit {
  *     下拉菜单(如选择pdfTeX/pdfLaTeX/XeTeX等)
  */
 QComboBox {
-    border: 1px solid gray;
+    border: 1px solid #6272A4;
     padding: 2px 18px 4px 6px;
     border-radius: 4px;
 }
@@ -50,9 +50,15 @@ QComboBox::drop-down {
     subcontrol-origin: padding;
     subcontrol-position: top right;
     width: 20px;
-    border-left-width: 1px;
-    border-left-color: #eeeeee;
-    border-left-style: solid;
+    border-left: 1px solid #6272A4;
+}
+
+/* 
+ * The drop-arrow frame that is currently in use
+ * 按下状态的下拉箭头区域
+ */
+QComboBox::drop-down:on { 
+    background-color: #44475a;
 }
 
 /* 
@@ -60,9 +66,9 @@ QComboBox::drop-down {
  * 展开后的下拉菜单
  */
 QComboBox QAbstractItemView {
-    border: 2px solid darkgray;
-    selection-background-color: #333333;
-	background-color: black;
+    border: 1px solid #6272A4;
+	background-color: #282a36;
+    selection-background-color: #44475a;
 }
 
 /* 
