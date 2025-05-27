@@ -27,6 +27,7 @@ QTextEdit {
     color: #f8f8f2;
 	selection-background-color: #44475a;
 	selection-color: #f8f8f2;
+    border: 1px solid #6272A4;
 }
 
 /* 
