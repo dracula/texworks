@@ -67,9 +67,14 @@ QComboBox::drop-down:on {
  * 展开后的下拉菜单
  */
 QComboBox QAbstractItemView {
+    outline: 0px; /* Prohibit drawing the focus box 禁止Qt自动绘制焦点框 */
     border: 1px solid #6272a4;
 	background-color: #282a36;
-    selection-background-color: #44475a;
+}
+
+QComboBox QAbstractItemView::item:selected, QComboBox QAbstractItemView::item:hover {
+    color: #8be9fd;
+	background-color: #44475a;
 }
 
 /* 
