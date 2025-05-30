@@ -52,6 +52,9 @@
 # comments
  #6272A4		Y	%.*
 
+# URLs
+ #FFB86C;IU	 N	(?:https?|ftps?):\/\/[^\s{}[\]<>\\"]+
+
 # math modes
  #BD93F9;B	 N	[$^_]|\\\(|\\\)|\\\[|\\\]
 
