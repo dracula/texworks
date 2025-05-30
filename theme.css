@@ -312,10 +312,10 @@ QTabBar::tab:!selected {
 
 Tw--UI--ClosableTabWidget QToolButton {
     qproperty-icon: url(./src/close.png); /* image tag not working 不运行的图像标签 */
-    background-color: #333333;
+    background-color: #282a36;
 }
 Tw--UI--ClosableTabWidget QToolButton:hover {
-    background-color: #800000;
+    background-color: #44475a;
 }
 
 /* 
