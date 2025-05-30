@@ -277,22 +277,24 @@ QTabWidget QToolButton:hover {
  *      选项卡(首选项，控制台输出)
  */
 QTabBar::tab {
-    background: #222222;
-    border: 1px solid #555555;
-	border-bottom-color: #333333; /* Same as pane color 与窗格颜色相同 */
-	min-width: 8ex;
+    background-color: #282a36;
+    border: 1px solid #6272a4;
+	border-bottom-color: #282a36; /* Same as pane color 与窗格颜色相同 */
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    min-width: 8ex;
     padding: 4px 8px 4px 8px;
 }
 
 QTabBar::tab:selected {
-    background: #333333;
-	color: #ffffff;
-	border-color: #555555;
-    border-bottom-color: #333333; /* Same as pane color 与窗格颜色相同 */
+    background-color: #282a36;
+	color: #8be9fd;
+    border-bottom: 2.5px solid #ff79c6; /* Same as pane color 与窗格颜色相同 */
 }
 
 QTabBar::tab:hover {
-    background: #444444;
+    background-color: #44475a;
+    top: 1px; /* Move to the down by 1px 向下偏移1像素 */
 }
 
 /* 
