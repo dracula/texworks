@@ -104,7 +104,8 @@ QComboBox::down-arrow:on {
  *     It refers to the items under the menu
  *     下拉菜单项
  */
-QMenuBar::item:pressed,  QMenuBar::item:selected {
+QMenuBar::item:pressed, QMenuBar::item:selected {
+    color: #8be9fd;
     background-color: #44475a;
 }
 
@@ -112,7 +113,8 @@ QMenu {
     border: 1px solid #6272a4;
 }
 
-QMenu::item:selected {
+QMenu::item:selected, QMenu::item:hover {
+    color: #8be9fd;
     background-color: #44475a;
 }
 
