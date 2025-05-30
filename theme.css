@@ -314,6 +314,7 @@ Tw--UI--ClosableTabWidget QToolButton {
     qproperty-icon: url(./src/close.png); /* image tag not working 不运行的图像标签 */
     background-color: #282a36;
 }
+
 Tw--UI--ClosableTabWidget QToolButton:hover {
     background-color: #44475a;
 }
@@ -379,12 +380,19 @@ QTableView {
 }
 
 /* 
+ * QToolBar:
+ *     Tool Bar (under menu)
+ *     工具栏(在菜单下)
  * QToolButton:
- *     Buttons with images (under menu)
- *     带图像的按钮(在菜单下)
+ *     Buttons with images on the Tool Bar
+ *     工具栏上带图像的按钮
  */
+QToolBar {
+    border-top: 1px solid #6272a4;
+}
+
 QToolButton:hover {
-    background-color: #444444;
+    background-color: #44475a;
 }
 
 /* 
