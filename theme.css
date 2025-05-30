@@ -98,12 +98,12 @@ QComboBox::down-arrow:on {
  *     It refers to the items under the menu
  *     下拉菜单项
  */
-QMenu::item:selected {
-    background-color: #333333;
+QMenuBar::item:pressed,  QMenuBar::item:selected {
+    background: #44475a;
 }
 
-QMenuBar::item:pressed,  QMenuBar::item:selected {
-    background: #333333;
+QMenu::item:selected {
+    background-color: #44475a;
 }
 
 /* QScrollBar:
