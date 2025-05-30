@@ -100,7 +100,7 @@ QComboBox::down-arrow:on {
  *     下拉菜单项
  */
 QMenuBar::item:pressed,  QMenuBar::item:selected {
-    background: #44475a;
+    background-color: #44475a;
 }
 
 QMenu {
