@@ -27,8 +27,8 @@ QTextEdit {
     color: #f8f8f2;
 	selection-background-color: #44475a;
 	selection-color: #f8f8f2;
-    border-top: 1px solid #6272A4;
-    border-bottom: 1px solid #6272A4;
+    border-top: 1px solid #6272a4;
+    border-bottom: 1px solid #6272a4;
 }
 
 /* 
@@ -37,7 +37,7 @@ QTextEdit {
  *     下拉菜单(如选择pdfTeX/pdfLaTeX/XeTeX等)
  */
 QComboBox {
-    border: 1px solid #6272A4;
+    border: 1px solid #6272a4;
     padding: 2px 18px 4px 6px;
     border-radius: 4px;
 }
@@ -51,7 +51,7 @@ QComboBox::drop-down {
     subcontrol-origin: padding;
     subcontrol-position: top right;
     width: 20px;
-    border-left: 1px solid #6272A4;
+    border-left: 1px solid #6272a4;
 }
 
 /* 
@@ -67,7 +67,7 @@ QComboBox::drop-down:on {
  * 展开后的下拉菜单
  */
 QComboBox QAbstractItemView {
-    border: 1px solid #6272A4;
+    border: 1px solid #6272a4;
 	background-color: #282a36;
     selection-background-color: #44475a;
 }
@@ -104,7 +104,7 @@ QMenuBar::item:pressed,  QMenuBar::item:selected {
 }
 
 QMenu {
-    border: 1px solid #6272A4;
+    border: 1px solid #6272a4;
 }
 
 QMenu::item:selected {
@@ -133,19 +133,19 @@ QScrollBar::handle:vertical {
 }
 
 QScrollBar::add-line:vertical {
-     border: none;
-     background: #333333;
-     height: 20px;
-     subcontrol-position: bottom;
-     subcontrol-origin: margin;
+    border: none;
+    background: #333333;
+    height: 20px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
 }
 
 QScrollBar::sub-line:vertical {
-     border: none;
-     background: #333333;
-     height: 20px;
-     subcontrol-position: top;
-     subcontrol-origin: margin;
+    border: none;
+    background: #333333;
+    height: 20px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
 }
 
 QScrollBar::add-line:vertical:pressed {
@@ -197,8 +197,8 @@ QScrollBar::handle:horizontal {
 }
 
 QScrollBar::add-line:horizontal {
-     border: none;
-     background: #333333;
+    border: none;
+    background: #333333;
     width: 20px;
     subcontrol-position: right;
     subcontrol-origin: margin;
@@ -372,10 +372,10 @@ QHeaderView::section:hover  {
  *     搜索结果行
  */
 QTableView {
-   background-color: #111111;
-   alternate-background-color: #222222;
-   selection-background-color: #555555;
-   font-color: #FFFFFF;
+    background-color: #111111;
+    alternate-background-color: #222222;
+    selection-background-color: #555555;
+    font-color: #FFFFFF;
 }
 
 /* 
