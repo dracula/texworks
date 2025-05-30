@@ -117,43 +117,39 @@ QMenu::item:selected {
  * handle:
  *     It is the moving part
  *     滑块部分
- * add-line:
- *     Add-line is the region where the arrow is drawn. If no image is embedded, the arrow is a dot.
- *     箭头所在区域(若无图片则显示圆点)
+ * add-line (or sub-line):
+ *     The region where the arrow is drawn. If no image is embedded, the arrow is a dot.
+ *     下滑箭头所在区域(若无图片则显示圆点)
  */
 QScrollBar:vertical { 
-    background: #111111;
+    background-color: #44475a;
     width: 15px;
     margin: 20px 0 20px 0;
 }
 
 QScrollBar::handle:vertical {
-    background: #555555;
+    background-color: #282a36;
+    border: 1px solid #6272a4;
     min-height: 20px;
 }
 
 QScrollBar::add-line:vertical {
     border: none;
-    background: #333333;
+    background-color: #282a36;
     height: 20px;
-    subcontrol-position: bottom;
+    subcontrol-position: bottom; /* sliding-down botton 下滑按钮*/
     subcontrol-origin: margin;
 }
 
 QScrollBar::sub-line:vertical {
-    border: none;
-    background: #333333;
+    background-color: #282a36;
     height: 20px;
-    subcontrol-position: top;
+    subcontrol-position: top; /* sliding-up botton 上滑按钮*/
     subcontrol-origin: margin;
 }
 
-QScrollBar::add-line:vertical:pressed {
-	background: #444444;
-}
-
-QScrollBar::sub-line:vertical:pressed {
-	background: #444444;
+QScrollBar::add-line:vertical:pressed, QScrollBar::sub-line:vertical:pressed {
+	background-color: #44475a;
 }
 
 QScrollBar::up-arrow:vertical {
@@ -186,38 +182,35 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
  * 水平滚动条
  */
 QScrollBar:horizontal {
-    background: #111111;
+    background-color: #44475a;
     height: 15px;
     margin: 0 20px 0 20px;
 }
 
 QScrollBar::handle:horizontal {
-    background: #555555;
+    background-color: #282a36;
+    border: 1px solid #6272a4;
     min-width: 20px;
 }
 
 QScrollBar::add-line:horizontal {
     border: none;
-    background: #333333;
+    background-color: #282a36;
     width: 20px;
-    subcontrol-position: right;
+    subcontrol-position: right; /* sliding-right botton 右滑按钮*/
     subcontrol-origin: margin;
 }
 
 QScrollBar::sub-line:horizontal {
-     border: none;
-     background: #333333;
+    border: none;
+    background-color: #282a36;
     width: 20px;
-    subcontrol-position: left;
+    subcontrol-position: left; /* sliding-left botton 左滑按钮*/
     subcontrol-origin: margin;
 }
 
-QScrollBar::add-line:horizontal:pressed {
-	background: #444444;
-}
-
-QScrollBar::sub-line:horizontal:pressed {
-	background: #444444;
+QScrollBar::add-line:horizontal:pressed, QScrollBar::sub-line:horizontal:pressed {
+	background: #44475a;
 }
 
 QScrollBar:left-arrow:horizontal {
