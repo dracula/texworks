@@ -58,8 +58,11 @@
 # math modes
  #BD93F9;B	 N	[$^_]|\\\(|\\\)|\\\[|\\\]
 
-# arguments
- #FFB86C;I	N	(?<=\{)[^{}\\]*?(?=\})|(?<=\[)[^\[\]\\]*?(?=\])
+# mandatory arguments
+ #FFB86C;I	 N	(?<=\{)[^{}\\]*?(?=\})
+
+# optional arguments
+ #F1FA8C;I	 N	(?<=\[)[^\[\]\\]*?(?=\])
 
 [ConTeXt]
 # special characters
