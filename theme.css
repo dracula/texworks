@@ -251,7 +251,7 @@ QSizeGrip {
  *     标签页容器框架
  */
 QTabWidget::pane {
-    border: 1px solid #333333;
+    border: 1px solid #6272a4;
 }
 
 QTabWidget::tab-bar {
@@ -263,13 +263,13 @@ QTabWidget::tab-bar {
  * 偏好设置中的按钮(未单独指定时也会影响控制台关闭按钮)
  */
 QTabWidget QToolButton {
-	background-color: #444444;
+	background-color: #282a36;
 	margin: 2px;
 	padding: 1px;
 }
 
 QTabWidget QToolButton:hover {
-    background-color: #555555;
+    background-color: #44475a;
 }
 
 /* QTabBar:
