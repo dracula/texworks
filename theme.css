@@ -102,6 +102,10 @@ QMenuBar::item:pressed,  QMenuBar::item:selected {
     background: #44475a;
 }
 
+QMenu {
+    border: 1px solid #6272A4;
+}
+
 QMenu::item:selected {
     background-color: #44475a;
 }
