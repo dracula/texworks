@@ -75,6 +75,8 @@ QComboBox QAbstractItemView {
 QComboBox QAbstractItemView::item:selected, QComboBox QAbstractItemView::item:hover {
     color: #8be9fd;
 	background-color: #44475a;
+    margin: 1px;
+    border-radius: 4px;
 }
 
 /* 
@@ -107,6 +109,8 @@ QComboBox::down-arrow:on {
 QMenuBar::item:pressed, QMenuBar::item:selected {
     color: #8be9fd;
     background-color: #44475a;
+    margin: 1px;
+    border-radius: 4px;
 }
 
 QMenu {
@@ -116,6 +120,8 @@ QMenu {
 QMenu::item:selected, QMenu::item:hover {
     color: #8be9fd;
     background-color: #44475a;
+    margin: 1px;
+    border-radius: 4px;
 }
 
 /* QScrollBar:
