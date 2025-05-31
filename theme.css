@@ -124,7 +124,8 @@ QMenu::item:selected, QMenu::item:hover {
     border-radius: 4px;
 }
 
-/* QScrollBar:
+/* 
+ * QScrollBar:
  *     handles scroll bars. It must be doubled for vertical and horizontal
  *     滚动条控件（需分别设置垂直/水平）
  * handle:
@@ -283,7 +284,8 @@ QTabWidget QToolButton:hover {
     background-color: #44475a;
 }
 
-/* QTabBar:
+/*
+ * QTabBar:
  *      Tabs (preferences, console output)
  *      选项卡(首选项，控制台输出)
  */
@@ -317,6 +319,11 @@ QTabBar::tab:!selected {
     margin-top: 2px;
 }
 
+/* 
+ * Tw--UI--ClosableTabWidget QToolButton:
+ *     Close button on Closable Tabs
+ *     可关闭标签页上的关闭按钮
+ */
 Tw--UI--ClosableTabWidget QToolButton {
     qproperty-icon: url(./src/close.png); /* image tag not working 不运行的图像标签 */
     background-color: #282a36;
@@ -328,8 +335,8 @@ Tw--UI--ClosableTabWidget QToolButton:hover {
 
 /* 
  * QDockWidget:
- *     Search results window
- *     搜索结果窗口
+ *     Dockable window controls (such as Tags)
+ *     可停靠窗口控件(比如“标签”)
  */
 QDockWidget {
     border: 1px solid lightgray;
@@ -359,8 +366,8 @@ QDockWidget::close-button:hover {
 
 /* 
  * QHeaderView:
- *     Search results header row
- *     搜索结果标题行
+ *     The title bar of the table view control (search results)
+ *     表格视图控件的标题栏（搜索结果）
  */
 QHeaderView::section  {
 	background-color: #222222;
@@ -376,8 +383,8 @@ QHeaderView::section:hover  {
 
 /* 
  * QTableView:
- *     Search results rows
- *     搜索结果行
+ *     Table view control (Search results)
+ *     表格视图控件（搜索结果）
  */
 QTableView {
     background-color: #111111;
@@ -427,6 +434,11 @@ QPushButton:hover {
 	background-color: #444444;
 }
 
+/* 
+ * Tw--UI--ScreenCalibrationWidget:
+ *     Screen DPI control (Preferences -> Preview -> Screen Resolution)
+ *     屏幕 DPI 控件(首选项 -> 预览 -> 屏幕分辨率)
+ */
 Tw--UI--ScreenCalibrationWidget {
 	color: #FFFFFF;
 	background-color: #333333;
