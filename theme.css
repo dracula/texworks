@@ -330,7 +330,7 @@ Tw--UI--ClosableTabWidget QToolButton {
 }
 
 Tw--UI--ClosableTabWidget QToolButton:hover {
-    background-color: #44475a;
+    background-color: #ff5555;
 }
 
 /* 
