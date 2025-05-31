@@ -440,6 +440,6 @@ QPushButton:hover {
  *     屏幕 DPI 控件(首选项 -> 预览 -> 屏幕分辨率)
  */
 Tw--UI--ScreenCalibrationWidget {
-	color: #FFFFFF;
-	background-color: #333333;
+	color: #f8f8f2;
+	background-color: #44475a;
 }
