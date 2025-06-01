@@ -471,23 +471,21 @@ QToolButton:hover {
  *     带文本的按钮(确定，取消...)
  */
 QPushButton {
-    background-color: #222222;
-    border-style: outset;
-    border-width: 1px;
-    border-color: #555555;
+    background-color: #282a36;
+    border: 1px outset #6272a4;
     padding: 4px;
-}
-
-QPushButton:pressed {
-    background-color: #555555;
-	border-style: inset;
-    border-width: 1px;
-    border-color: #555555;
-    padding: 4px;
+    border-radius: 4px;
 }
 
 QPushButton:hover {
-	background-color: #444444;
+    color: #8be9fd;
+	background-color: #44475a;
+}
+
+QPushButton:pressed {
+    color: #8be9fd;
+	background-color: #44475a;
+    border-style: inset;
 }
 
 /* 
