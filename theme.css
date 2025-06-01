@@ -127,7 +127,7 @@ QMenu::item:selected, QMenu::item:hover {
 /* 
  * QScrollBar:
  *     handles scroll bars. It must be doubled for vertical and horizontal
- *     滚动条控件（需分别设置垂直/水平）
+ *     滚动条控件(需分别设置垂直/水平)
  * handle:
  *     It is the moving part
  *     滑块部分
