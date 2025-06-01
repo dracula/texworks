@@ -365,6 +365,55 @@ QDockWidget::close-button:hover {
 }
 
 /* 
+ * QTreeView:
+ *     Side bar of Outlines that looks like Tree Structure (Tags)
+ *     文档大纲所在的形如树状结构的侧栏(标签)
+ * branch:
+ *     Branches that can fold (or Expand) items
+ *     可折叠(或展开)子项的分支
+ */
+QTreeView {
+    border: 1px solid #6272a4;
+}
+
+QTreeView::item:has-children {
+    color: #ffb86c; /* This marks parent items 标注父条目*/
+}
+
+QTreeView::item:selected, QTreeView::item:hover {
+    color: #8be9fd;
+    background-color: #44475a;
+    margin: 1px;
+    border-radius: 4px;
+}
+
+QTreeView::branch {
+    background-color: #282a36;
+}
+
+QTreeView::branch:closed:has-children {
+    image: url(./src/collapse.png);
+}
+
+QTreeView::branch:open:has-children {
+    image: url(./src/expand.png);
+}
+
+QTreeView::branch:closed:has-children:hover {
+    image: url(./src/collapse-hover.png);
+    background-color: #44475a;
+    margin: 1px;
+    border-radius: 4px;
+}
+
+QTreeView::branch:open:has-children:hover {
+    image: url(./src/expand-hover.png);
+    background-color: #44475a;
+    margin: 1px;
+    border-radius: 4px;
+}
+
+/* 
  * QHeaderView:
  *     The title bar of the table view control (search results)
  *     表格视图控件的标题栏（搜索结果）
