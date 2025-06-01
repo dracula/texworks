@@ -414,32 +414,42 @@ QTreeView::branch:open:has-children:hover {
 }
 
 /* 
- * QHeaderView:
- *     The title bar of the table view control (search results)
- *     表格视图控件的标题栏（搜索结果）
- */
-QHeaderView::section  {
-	background-color: #222222;
-	border-right: 1px solid lightgray;
-	border-left: 1px solid lightgray;
-	color: white;
-    padding-left: 4px;
-}
-
-QHeaderView::section:hover  {
-	background-color: #444444;
-}
-
-/* 
  * QTableView:
  *     Table view control (Search results)
- *     表格视图控件（搜索结果）
+ *     表格视图控件(搜索结果)
+ * QHeaderView:
+ *     The title bar of the table view control (search results)
+ *     表格视图控件的标题栏(搜索结果)
  */
 QTableView {
-    background-color: #111111;
-    alternate-background-color: #222222;
-    selection-background-color: #555555;
-    font-color: #FFFFFF;
+    outline: 0px;
+    background-color: #282a36;
+    border: 1px solid #6272a4;
+    alternate-background-color: #282a36;
+    selection-background-color: #44475a;
+}
+
+QTableView::item:selected:focus, QTableView::item:hover {
+    color: #8be9fd;
+    background-color: #44475a;
+    margin: 1px;
+    border-radius: 4px;
+}
+
+QTableView::item:selected:!focus {
+    color: #f8f8f2;
+    background-color: #44475a;
+}
+
+QHeaderView::section {
+    font-weight: bold;
+    text-align: center;
+	background-color: #6272a4;
+}
+
+QHeaderView::section:pressed, QHeaderView::section:hover {
+    color: #8be9fd;
+	background-color: #44475a;
 }
 
 /* 
