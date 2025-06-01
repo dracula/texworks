@@ -37,9 +37,17 @@ QTextEdit {
  *     下拉菜单(如选择pdfTeX/pdfLaTeX/XeTeX等)
  */
 QComboBox {
-    border: 1px solid #6272a4;
+    border: 1px outset #6272a4;
     padding: 2px 18px 4px 6px;
     border-radius: 4px;
+}
+
+QComboBox:hover {
+    color: #8be9fd;
+}
+
+QComboBox:on {
+    color: #f8f8f2;
 }
 
 /* 
@@ -47,19 +55,34 @@ QComboBox {
  *     The drop-arrow frame
  *     下拉箭头区域
  */
-QComboBox::drop-down { 
+QComboBox::drop-down {
     subcontrol-origin: padding;
     subcontrol-position: top right;
     width: 20px;
-    border-left: 1px solid #6272a4;
+    border-left: 1px outset #6272a4;
+}
+
+QComboBox::drop-down:hover {
+    background-color: #44475a;
 }
 
 /* 
  * The drop-arrow frame that is currently in use
  * 按下状态的下拉箭头区域
  */
-QComboBox::drop-down:on { 
+QComboBox::drop-down:on {
     background-color: #44475a;
+    border-style: inset;
+}
+
+/* 
+ * The drop-down arrow icon
+ * 下拉箭头图标
+ */
+QComboBox::down-arrow {
+    image: url(./src/down-arrow.png);
+	width: 16px;
+	height: 16px;
 }
 
 /* 
@@ -77,16 +100,6 @@ QComboBox QAbstractItemView::item:selected, QComboBox QAbstractItemView::item:ho
 	background-color: #44475a;
     margin: 1px;
     border-radius: 4px;
-}
-
-/* 
- * The drop-down arrow icon
- * 下拉箭头图标
- */
-QComboBox::down-arrow {
-    image: url(./src/down-arrow.png);
-	width: 16px;
-	height: 16px;
 }
 
 /* 
