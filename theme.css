@@ -139,50 +139,24 @@ QMenu::item:selected, QMenu::item:hover {
  *     The region where the arrow is drawn. If no image is embedded, the arrow is a dot.
  *     下滑箭头所在区域(若无图片则显示圆点)
  */
-QScrollBar:vertical { 
-    background-color: #44475a;
-    width: 15px;
-    margin: 20px 0 20px 0;
+QScrollBar:vertical {
+    width: 16px;
+    margin: 16px 3px 16px 3px;
+    border-radius: 5px;
+}
+
+QScrollBar:vertical:hover {
+    background: #44475a;
 }
 
 QScrollBar::handle:vertical {
     background-color: #6272a4;
+    border-radius: 5px;
     min-height: 20px;
 }
 
-QScrollBar::add-line:vertical {
-    border: none;
-    background-color: #282a36;
-    height: 20px;
-    subcontrol-position: bottom; /* sliding-down botton 下滑按钮*/
-    subcontrol-origin: margin;
-}
-
-QScrollBar::sub-line:vertical {
-    background-color: #282a36;
-    height: 20px;
-    subcontrol-position: top; /* sliding-up botton 上滑按钮*/
-    subcontrol-origin: margin;
-}
-
-QScrollBar::add-line:vertical:pressed, QScrollBar::sub-line:vertical:pressed {
-	background-color: #44475a;
-}
-
-QScrollBar::up-arrow:vertical {
-    image: url(./src/up-arrow.png);
-	border: none;
-	width: 12px;
-	height: 12px;
-	padding: 12px;
-}
-
-QScrollBar::down-arrow:vertical {
-    image: url(./src/down-arrow.png);
-	border: none;
-	width: 12px;
-	height: 12px;
-	padding: 12px;
+QScrollBar::handle:vertical:hover {
+    background-color: #8be9fd;
 }
 
 /* 
@@ -194,59 +168,108 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
     background: none;
 }
 
+QScrollBar::add-line:vertical {
+    subcontrol-origin: margin;
+    subcontrol-position: bottom; /* sliding-down botton 下滑按钮*/
+    border-radius: 8px;
+    height: 16px;
+}
+
+QScrollBar::sub-line:vertical {
+    subcontrol-origin: margin;
+    subcontrol-position: top; /* sliding-up botton 上滑按钮*/
+    border-radius: 8px;
+    height: 16px;
+}
+
+QScrollBar::add-line:vertical:hover, QScrollBar::sub-line:vertical:hover {
+	background-color: #44475a;
+}
+
+QScrollBar::up-arrow:vertical {
+    image: url(./src/up-arrow.png);
+	width: 12px;
+	height: 12px;
+}
+
+QScrollBar::down-arrow:vertical {
+    image: url(./src/down-arrow.png);
+	width: 12px;
+	height: 12px;
+}
+
+QScrollBar::up-arrow:vertical:hover {
+    image: url(./src/up-arrow-2.png);
+}
+
+QScrollBar::down-arrow:vertical:hover {
+    image: url(./src/down-arrow-2.png);
+}
+
 /* 
  * Horizontal scroll bar
  * 水平滚动条
  */
 QScrollBar:horizontal {
-    background-color: #44475a;
-    height: 15px;
-    margin: 0 20px 0 20px;
+    height: 16px;
+    margin: 3px 16px 3px 16px;
+    border-radius: 5px;
+}
+
+QScrollBar:horizontal:hover {
+    background: #44475a;
 }
 
 QScrollBar::handle:horizontal {
     background-color: #6272a4;
+    border-radius: 5px;
     min-width: 20px;
 }
 
+QScrollBar::handle:horizontal:hover {
+    background-color: #8be9fd;
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal { 
+    background: none;
+}
+
 QScrollBar::add-line:horizontal {
-    border: none;
-    background-color: #282a36;
-    width: 20px;
-    subcontrol-position: right; /* sliding-right botton 右滑按钮*/
     subcontrol-origin: margin;
+    subcontrol-position: right; /* sliding-right botton 右滑按钮*/
+    border-radius: 8px;
+    width: 16px;
 }
 
 QScrollBar::sub-line:horizontal {
-    border: none;
-    background-color: #282a36;
-    width: 20px;
-    subcontrol-position: left; /* sliding-left botton 左滑按钮*/
     subcontrol-origin: margin;
+    subcontrol-position: left; /* sliding-left botton 左滑按钮*/
+    border-radius: 8px;
+    width: 16px;
 }
 
-QScrollBar::add-line:horizontal:pressed, QScrollBar::sub-line:horizontal:pressed {
+QScrollBar::add-line:horizontal:hover, QScrollBar::sub-line:horizontal:hover {
 	background: #44475a;
 }
 
 QScrollBar:left-arrow:horizontal {
     image: url(./src/left-arrow.png);
-	border: none;
 	width: 12px;
 	height: 12px;
-	padding: 12px;
 }
 
 QScrollBar::right-arrow:horizontal {
     image: url(./src/right-arrow.png);
-	border: none;
 	width: 12px;
 	height: 12px;
-	padding: 12px;
 }
 
-QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal { 
-    background: none;
+QScrollBar:left-arrow:horizontal:hover {
+    image: url(./src/left-arrow-2.png);
+}
+
+QScrollBar::right-arrow:horizontal:hover {
+    image: url(./src/right-arrow-2.png);
 }
 
 /* 
@@ -319,22 +342,22 @@ QTabBar::tab {
     background-color: #282a36;
     border: 1px solid #6272a4;
 	border-bottom-color: #282a36; /* Same as pane color 与窗格颜色相同 */
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
     min-width: 8ex;
     padding: 4px 8px 4px 8px;
 }
 
 QTabBar::tab:selected {
-    background-color: #282a36;
 	color: #8be9fd;
+    background-color: #282a36;
     border-bottom: 2.5px solid #ff79c6; /* Same as pane color 与窗格颜色相同 */
 }
 
 QTabBar::tab:hover {
-    background-color: #44475a;
 	color: #8be9fd;
-    top: 1px; /* Move to the down by 1px 向下偏移1像素 */
+    background-color: #44475a;
+    top: 4px; /* Move to the down by 4px 向下偏移4像素 */
 }
 
 /* 
@@ -342,7 +365,7 @@ QTabBar::tab:hover {
  * 使未选定的选项卡看起来更小
  */
 QTabBar::tab:!selected {
-    margin-top: 2px;
+    margin-top: 4px;
 }
 
 /* 
