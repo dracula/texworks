@@ -446,14 +446,14 @@ QTreeView::branch:open:has-children {
 }
 
 QTreeView::branch:closed:has-children:hover {
-    image: url(./src/collapse-hover.png);
+    image: url(./src/collapse-2.png);
     background-color: #44475a;
     margin: 1px;
     border-radius: 4px;
 }
 
 QTreeView::branch:open:has-children:hover {
-    image: url(./src/expand-hover.png);
+    image: url(./src/expand-2.png);
     background-color: #44475a;
     margin: 1px;
     border-radius: 4px;
