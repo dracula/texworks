@@ -279,9 +279,13 @@ QScrollBar::right-arrow:horizontal:hover {
  */
 QSizeGrip {
 	image: url(./src/size-grip.png);
+	background: none;
 	width: 12px;
 	height: 12px;
-	background: none;
+}
+
+QSizeGrip:hover {
+	image: url(./src/size-grip-2.png);
 }
 
 /* 
