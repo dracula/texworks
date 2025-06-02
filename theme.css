@@ -397,17 +397,16 @@ QDockWidget::title {
     padding-left: 5px;
 }
 
-QDockWidget::close-button, QDockWidget::float-button {
-    border: none;
-    background-color: #282a36;
+QDockWidget::close-button:hover {
+    background-color: #ff5555;
+    margin: 1px;
+    border-radius: 4px;
 }
 
 QDockWidget::float-button:hover {
     background-color: #44475a;
-}
-
-QDockWidget::close-button:hover {
-    background-color: #ff5555;
+    margin: 1px;
+    border-radius: 4px;
 }
 
 /* 
