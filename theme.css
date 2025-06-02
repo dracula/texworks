@@ -288,6 +288,28 @@ QTabWidget QToolButton:hover {
     background-color: #44475a;
 }
 
+/* 
+ * QGroupBox:
+ *     Group box frames with a title and child widgets
+ *     带有标题和子部件的分组框架控件
+ */
+QGroupBox {
+    border: 1px solid #6272a4;
+    padding-top: 20px;
+}
+
+QGroupBox::title {
+    subcontrol-position: top center;
+    color: #8be9fd;
+    background-color: #282a36;
+    border: 1px solid #6272a4;
+    border-top: 2.5px solid #ff79c6;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    min-width: 10ex;
+    padding: 2px 48px 2px 48px;
+}
+
 /*
  * QTabBar:
  *      Tabs (preferences, console output)
