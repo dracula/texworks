@@ -518,6 +518,11 @@ QToolBar {
     border-top: 1px solid #6272a4;
 }
 
+QToolButton {
+    border-radius: 4px;
+    margin-top: 1px;
+}
+
 QToolButton:hover {
     background-color: #44475a;
 }
