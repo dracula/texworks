@@ -382,6 +382,10 @@ Tw--UI--ClosableTabWidget QToolButton:hover {
     background-color: #ff5555;
 }
 
+Tw--UI--ClosableTabWidget::pane {
+    border: none; /* Avoid overlapping with text editor window's border 以免和文本编辑器边框重合 */
+}
+
 /* 
  * QDockWidget:
  *     Dockable window controls (such as Tags and Search results)
