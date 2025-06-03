@@ -378,11 +378,16 @@ QTabBar::tab:!selected {
  *     可关闭标签页上的关闭按钮
  */
 Tw--UI--ClosableTabWidget QToolButton {
-    qproperty-icon: url(./src/close.png); /* image tag not working 不运行的图像标签 */
-    background-color: #282a36;
+    qproperty-icon: none;
+    image: url(./src/close.png); /* image tag not working 不运行的图像标签 */
+    width: 12px;
+    height: 12px;
+    padding: 4px;
+    border-radius: 4px;
 }
 
 Tw--UI--ClosableTabWidget QToolButton:hover {
+    image: url(./src/close-2.png);
     background-color: #ff5555;
 }
 
@@ -397,8 +402,8 @@ QDockWidget {
 }
 
 QDockWidget::title {
-    background-color: #282a36;
     padding-left: 5px;
+    padding-top: 5px;
 }
 
 QDockWidget::close-button:hover {
