@@ -83,7 +83,6 @@ QComboBox::drop-down:hover {
 QComboBox QAbstractItemView {
     outline: 0px; /* Prohibit drawing the focus box 禁止Qt自动绘制焦点框 */
     border: 1px solid #6272a4;
-	background-color: #282a36;
 }
 
 QComboBox QAbstractItemView::item:selected, QComboBox QAbstractItemView::item:hover {
@@ -313,6 +312,7 @@ QTabWidget QToolButton:hover {
  */
 QGroupBox {
     border: 1px solid #6272a4;
+    border-radius: 8px;
     padding-top: 20px;
 }
 
@@ -321,11 +321,23 @@ QGroupBox::title {
     color: #8be9fd;
     background-color: #282a36;
     border: 1px solid #6272a4;
-    border-top: 2.5px solid #ff79c6;
+    border-top: 2px solid #ff79c6;
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
     min-width: 10ex;
     padding: 2px 48px 2px 48px;
+}
+
+QTabWidget QAbstractItemView {
+    outline: 0px; /* Prohibit drawing the focus box 禁止Qt自动绘制焦点框 */
+    border: 1px solid #6272a4;
+}
+
+QTabWidget QAbstractItemView::item:selected, QTabWidget QAbstractItemView::item:hover {
+    color: #8be9fd;
+	background-color: #44475a;
+    margin: 1px;
+    border-radius: 4px;
 }
 
 /*
@@ -503,6 +515,7 @@ QToolButton {
 }
 
 QToolButton:hover {
+    color: #8be9fd;
     background-color: #44475a;
 }
 
