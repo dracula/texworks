@@ -321,12 +321,10 @@ QGroupBox {
 
 QGroupBox::title {
     subcontrol-position: top center;
-    color: #8be9fd;
-    background-color: #282a36;
-    border: 1px solid #6272a4;
-    border-top: 2px solid #ff79c6;
-    border-bottom-right-radius: 12px;
-    border-bottom-left-radius: 12px;
+    background-color: #6272a4;
+    border: 1px solid transparent;
+    top: 4px;
+    border-radius: 10px;
     min-width: 10ex;
     padding: 2px 48px 2px 48px;
 }
@@ -400,6 +398,7 @@ QDockWidget {
 }
 
 QDockWidget::title {
+    border-color: transparent;
     padding-left: 5px;
     padding-top: 5px;
 }
