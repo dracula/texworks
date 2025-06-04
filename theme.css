@@ -39,7 +39,6 @@ QTextEdit {
 QComboBox {
     border: 1px solid #6272a4;
     padding: 3px 18px 4px 6px;
-    margin-top: 1px;
     border-radius: 4px;
 }
 
@@ -100,6 +99,10 @@ QComboBox QAbstractItemView::item:selected, QComboBox QAbstractItemView::item:ho
  *     It refers to the items under the menu
  *     下拉菜单项
  */
+QMenuBar {
+    border-bottom: 1px solid #6272a4;
+}
+
 QMenuBar::item:pressed, QMenuBar::item:selected {
     color: #8be9fd;
     background-color: #44475a;
@@ -503,19 +506,34 @@ QHeaderView::section:pressed, QHeaderView::section:hover {
 
 /* 
  * QToolBar:
- *     Tool Bar (under menu)
+ *     Tool bar (under menu)
  *     工具栏(在菜单下)
  * QToolButton:
- *     Buttons with images on the Tool Bar
+ *     Buttons with images on the tool tar
  *     工具栏上带图像的按钮
+ * separator:
+ *     分割线
+ *     Dividing lines
  */
 QToolBar {
-    border-top: 1px solid #6272a4;
+    border: none;
+}
+
+QToolBar::handle {
+    width: 1px;
+    border-right: 1px dotted #6272a4;
+    border-left: 1px dotted #6272a4;
+    margin: 3px 0 2px 1px;
+}
+
+QToolBar::separator {
+    width: 5px;
+    border: none;
 }
 
 QToolButton {
     border-radius: 4px;
-    margin-top: 1px;
+    margin: 1px;
 }
 
 QToolButton:hover {
