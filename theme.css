@@ -114,6 +114,12 @@ QMenu {
     border: 1px solid #6272a4;
 }
 
+QMenu::separator {
+    height: 0;
+    border-top: 1px solid #6272a4;
+    margin-right: 5px;
+}
+
 QMenu::item:selected, QMenu::item:hover {
     color: #8be9fd;
     background-color: #44475a;
