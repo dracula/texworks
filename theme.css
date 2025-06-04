@@ -384,6 +384,71 @@ QTabWidget QAbstractItemView::item:selected, QTabWidget QAbstractItemView::item:
     border-radius: 4px;
 }
 
+/* 
+ * QDoubleSpinBox:
+ *     Floating-point value adjustment controls
+ *     浮点数数值调节控件
+ * QSpinBox:
+ *     Integer value adjustment controls
+ *     整数数值调节控件
+ */
+QDoubleSpinBox, QSpinBox {
+    border: 1px solid #6272a4;
+    padding: 2px; /* 防止文字被箭头遮挡 */
+    selection-background-color: #44475a;
+    min-height: 20px;
+    border-radius: 4px;
+}
+
+QDoubleSpinBox:hover, QSpinBox:hover {
+    color: #8be9fd;
+    border-color: #ff79c6;
+}
+
+/* 
+ * Arrow frames
+ * 箭头区域
+ */
+QDoubleSpinBox::up-button, QDoubleSpinBox::down-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+}
+
+QDoubleSpinBox::up-button:hover, QDoubleSpinBox::down-button:hover {
+    background-color: #44475a;
+}
+
+QSpinBox::up-button, QSpinBox::down-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+}
+
+QSpinBox::up-button:hover, QSpinBox::down-button:hover {
+    background-color: #44475a;
+}
+
+QDoubleSpinBox::up-arrow, QSpinBox::up-arrow {
+    image: url(./src/up-arrow.png);
+    width: 10px;
+    height: 10px;
+}
+
+QDoubleSpinBox::down-arrow, QSpinBox::down-arrow {
+    image: url(./src/down-arrow.png);
+    width: 10px;
+    height: 10px;
+}
+
+QDoubleSpinBox::up-arrow:hover, QSpinBox::up-arrow:hover {
+    image: url(./src/up-arrow-2.png);
+}
+
+QDoubleSpinBox::down-arrow:hover, QSpinBox::down-arrow:hover {
+    image: url(./src/down-arrow-2.png);
+}
+
 /*
  * QTabBar:
  *      Tabs (preferences, console output)
