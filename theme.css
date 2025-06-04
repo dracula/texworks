@@ -282,6 +282,43 @@ QSizeGrip:hover {
 }
 
 /* 
+ * QlineEdit:
+ *     Interactive input control
+ *     一种交互式输入控件
+ */
+QLineEdit {
+    border: 1px solid #6272a4;
+    min-height: 16px;
+    border-radius: 4px;
+}
+
+QLineEdit:hover {
+    color: #8be9fd;
+    background-color: #44475a;
+    border: 1px solid #ff79c6;
+}
+
+/* 
+ * QStatusBar:
+ *     The bar Located at the bottom which provides current status information
+ *     位于底部的提供当前状态信息的栏
+ */
+QStatusBar {
+    border: none;
+}
+
+QStatusBar::item {
+    border: none;
+}
+
+QStatusBar QLabel {
+    background-color: #6272a4;
+    border: 1px solid transparent;
+    padding: 2px;
+    border-radius: 11px;
+}
+
+/* 
  * QTabWidget:
  *     The tab bar frame, needed for QTabBar styling
  *     标签页容器框架
