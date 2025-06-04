@@ -511,7 +511,6 @@ QTreeView::branch:open:has-children:hover {
  */
 QTableView {
     outline: 0px;
-    background-color: #282a36;
     border: 1px solid #6272a4;
     alternate-background-color: #282a36;
     selection-background-color: #44475a;
@@ -533,6 +532,8 @@ QHeaderView::section {
     font-weight: bold;
     text-align: center;
 	background-color: #6272a4;
+    border: 1px solid transparent;
+    min-width: 8ex;
 }
 
 QHeaderView::section:pressed, QHeaderView::section:hover {
