@@ -160,7 +160,7 @@ QScrollBar::handle:vertical:hover {
 
 /* 
  * This seems useless, but it is actually quite important
- * --it makes the scroll bar's background a uniform color instead of tiny dots, if it were removed.
+ * -- it makes the scroll bar's background a uniform color instead of tiny dots, if it were removed.
  * 此属性看似无用，实则关键——移除后滚动条背景会变成散点而非纯色
  */
 QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical { 
@@ -169,14 +169,14 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
 
 QScrollBar::add-line:vertical {
     subcontrol-origin: margin;
-    subcontrol-position: bottom; /* sliding-down botton 下滑按钮*/
+    subcontrol-position: bottom; /* Sliding-down bottons 下滑按钮*/
     border-radius: 8px;
     height: 16px;
 }
 
 QScrollBar::sub-line:vertical {
     subcontrol-origin: margin;
-    subcontrol-position: top; /* sliding-up botton 上滑按钮*/
+    subcontrol-position: top; /* Sliding-up bottons 上滑按钮*/
     border-radius: 8px;
     height: 16px;
 }
@@ -235,14 +235,14 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
 
 QScrollBar::add-line:horizontal {
     subcontrol-origin: margin;
-    subcontrol-position: right; /* sliding-right botton 右滑按钮*/
+    subcontrol-position: right; /* Sliding-right bottons 右滑按钮*/
     border-radius: 8px;
     width: 16px;
 }
 
 QScrollBar::sub-line:horizontal {
     subcontrol-origin: margin;
-    subcontrol-position: left; /* sliding-left botton 左滑按钮*/
+    subcontrol-position: left; /* Sliding-left bottons 左滑按钮*/
     border-radius: 8px;
     width: 16px;
 }
@@ -306,7 +306,7 @@ QLineEdit:hover {
 
 /* 
  * QStatusBar:
- *     The bar Located at the bottom which provides current status information
+ *     The bar located at the bottom which provides current status information
  *     位于底部的提供当前状态信息的栏
  */
 QStatusBar {
@@ -394,7 +394,7 @@ QTabWidget QAbstractItemView::item:selected, QTabWidget QAbstractItemView::item:
  */
 QDoubleSpinBox, QSpinBox {
     border: 1px solid #6272a4;
-    padding: 2px; /* 防止文字被箭头遮挡 */
+    padding: 2px; /* Prevent the text from being obscured by arrows 防止文字被箭头遮挡 */
     selection-background-color: #44475a;
     min-height: 20px;
     border-radius: 4px;
@@ -474,12 +474,12 @@ QTabBar::tab:selected {
 
 /* 
  * Tw--UI--ClosableTabWidget QToolButton:
- *     Close button on Closable Tabs
+ *     Close button on closable tabs
  *     可关闭标签页上的关闭按钮
  */
 Tw--UI--ClosableTabWidget QToolButton {
     qproperty-icon: none;
-    image: url(./src/close.png); /* image tag not working 不运行的图像标签 */
+    image: url(./src/close.png); /* Image tag not working 不运行的图像标签 */
     width: 12px;
     height: 12px;
     padding: 4px;
@@ -497,8 +497,8 @@ Tw--UI--ClosableTabWidget::pane {
 
 /* 
  * QDockWidget:
- *     Dockable window controls (such as Tags and Search results)
- *     可停靠窗口控件(比如“标签”和“搜索结果”)
+ *     Dockable window controls (such as tags and search results)
+ *     可停靠窗口控件(比如标签和搜索结果)
  */
 QDockWidget {
 	titlebar-close-icon: url(./src/close.png);
@@ -523,10 +523,10 @@ QDockWidget::float-button:hover {
 
 /* 
  * QTreeView:
- *     Side bar of Outlines that looks like Tree Structure (Tags)
+ *     Side bar of document outline that looks like tree structure (tags)
  *     文档大纲所在的形如树状结构的侧栏(标签)
  * branch:
- *     Branches that can fold (or Expand) items
+ *     Branches that can collapse (or expand) items
  *     可折叠(或展开)子项的分支
  */
 QTreeView {
@@ -572,7 +572,7 @@ QTreeView::branch:open:has-children:hover {
 
 /* 
  * QTableView:
- *     Table view control (Search results)
+ *     Table view control (search results)
  *     表格视图控件(搜索结果)
  * QHeaderView:
  *     The title bar of the table view control (search results)
