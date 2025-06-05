@@ -491,6 +491,24 @@ QDialog#FindDialog QToolButton#recentSearches:hover {
 }
 
 /* 
+ * ToolConfig:
+ *     Tool Configuration (Preference -> Typesetting -> Edit)
+ *     工具配置(首选项 -> 排版 -> 编辑)
+ */
+ToolConfig QAbstractItemView {
+    outline: 0px; /* Prohibit drawing the focus box 禁止Qt自动绘制焦点框 */
+    border: 1px solid #6272a4;
+    alternate-background-color: #282a36;
+}
+
+ToolConfig QAbstractItemView::item:selected, ToolConfig QAbstractItemView::item:hover {
+    color: #8be9fd;
+	background-color: #44475a;
+    margin: 1px;
+    border-radius: 4px;
+}
+
+/* 
  * Tw--UI--ClosableTabWidget QToolButton:
  *     Close button on closable tabs
  *     可关闭标签页上的关闭按钮
