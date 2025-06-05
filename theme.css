@@ -473,6 +473,24 @@ QTabBar::tab:selected {
 }
 
 /* 
+ * QDialog:
+ *     Dialog windows
+ *     对话窗口
+ * QDialog#FindDialog:
+ *     The search dialog window
+ *     搜索对话窗口
+ */
+QDialog#FindDialog QToolButton#recentSearches {
+    color: transparent; /* Hide the old icon 隐藏旧图标 */
+    image: url(./src/history.png);
+    padding: 1px;
+}
+
+QDialog#FindDialog QToolButton#recentSearches:hover {
+    image: url(./src/history-2.png);
+}
+
+/* 
  * Tw--UI--ClosableTabWidget QToolButton:
  *     Close button on closable tabs
  *     可关闭标签页上的关闭按钮
