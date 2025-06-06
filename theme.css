@@ -294,13 +294,13 @@ QSizeGrip:hover {
  */
 QLineEdit {
     border: 1px solid #6272a4;
+    selection-background-color: #44475a;
     min-height: 16px;
     border-radius: 4px;
 }
 
 QLineEdit:hover {
     color: #8be9fd;
-    background-color: #44475a;
     border: 1px solid #ff79c6;
 }
 
