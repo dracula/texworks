@@ -37,6 +37,7 @@
 # this is why the generic "control sequence" rule comes AFTER the specific \begin/\end one.
 
 [LaTeX]
+
 # special characters
  #BD93F9		N	[#{}\[\]&]
 
@@ -65,6 +66,7 @@
  #F1FA8C;I	 N	(?<=\[)[^\[\]\\]*?(?=\])
 
 [ConTeXt]
+
 # special characters
 red		N	[${}]
 
@@ -100,14 +102,26 @@ darkred      N   \&[a-zA-Z\_\-]+\;
 
 [BibTeX]
 
+# citation keys
+ #BD93F9	N	(?<=\w\{)[^,{}]+(?=,)
+
+# fields keys
+ #FF79C6	N	[a-zA-Z]+(?=\s*=)
+
 # entries
-olive	N	@[^{]+
+ #50FA7B	N	@[^{]+
 
 # comments
-gray		Y	%.*
+ #6272A4		Y	%.*
 
-# keys
-royalblue	N	[a-zA-Z]+(?=\s*=)
+# control sequences (mainly character encoding here)
+ #8BE9FD	N	\\(?:[\p{L}@]+|.[\p{L}]+|.)
+
+# URLs
+ #FFB86C;IU	 N	(?:https?|ftps?):\/\/[^\s{}[\]<>\\"]+
+
+# fields values
+ #FFB86C;I	N	(?<=\{)[^\\]+(?=\})|(?<=")[^"\\]+(?=")
 
 [LaTeX DTX]
 
