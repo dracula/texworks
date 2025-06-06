@@ -607,6 +607,22 @@ QTreeView::branch:open:has-children:hover {
 }
 
 /* 
+ * QListView:
+ *     List view controls (e.g. font settings in the format window)
+ *     列表视图控件(比如格式窗口中的字体设置)
+ */
+QListView {
+    outline: 0px;
+}
+
+QListView::item:selected, QListView::item:hover {
+    color: #8be9fd;
+	background-color: #44475a;
+    margin: 1px;
+    border-radius: 4px;
+}
+
+/* 
  * QTableView:
  *     Table view control (search results)
  *     表格视图控件(搜索结果)
