@@ -289,8 +289,8 @@ QSizeGrip:hover {
 
 /* 
  * QlineEdit:
- *     Interactive input control
- *     一种交互式输入控件
+ *     Interactive input controls
+ *     交互式输入控件
  */
 QLineEdit {
     border: 1px solid #6272a4;
@@ -533,7 +533,7 @@ Tw--UI--ClosableTabWidget::pane {
 
 /* 
  * QDockWidget:
- *     Dockable window controls (such as tags and search results)
+ *     Dockable window controls (e.g. tags and search results)
  *     可停靠窗口控件(比如标签和搜索结果)
  */
 QDockWidget {
@@ -624,11 +624,11 @@ QListView::item:selected, QListView::item:hover {
 
 /* 
  * QTableView:
- *     Table view control (search results)
+ *     Table view controls (e.g. search results)
  *     表格视图控件(搜索结果)
  * QHeaderView:
- *     The title bar of the table view control (search results)
- *     表格视图控件的标题栏(搜索结果)
+ *     The title bar of a table view control
+ *     表格视图控件的标题栏
  */
 QTableView {
     outline: 0px;
