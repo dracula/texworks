@@ -76,19 +76,33 @@ QComboBox::drop-down:hover {
 }
 
 /* 
- * The menu once opened
- * 展开后的下拉菜单
+ * QAbstractItemView:
+ *     The base class for every standard view (e.g. the menu once opened)
+ *     标准视图(比如展开后的下拉菜单)
  */
-QComboBox QAbstractItemView {
-    outline: 0px; /* Prohibit drawing the focus box 禁止Qt自动绘制焦点框 */
+QAbstractItemView {
+    outline: 0; /* Prohibit drawing the focus box 禁止Qt自动绘制焦点框 */
     border: 1px solid #6272a4;
+    background-color: #282a36;
+    alternate-background-color: #282a36;
 }
 
-QComboBox QAbstractItemView::item:selected, QComboBox QAbstractItemView::item:hover {
+QAbstractItemView::item:selected, QAbstractItemView::item:hover {
     color: #8be9fd;
 	background-color: #44475a;
     margin: 1px;
     border-radius: 4px;
+}
+
+/* 
+ * Unselectable options
+ * 不可选的选项
+ * Their background needs specific settings or its hovered colors will be hard to adjust
+ * 这需要特别设置否则会有难以调整的悬浮颜色
+ */
+QAbstractItemView::item:disabled {
+    color: #ff5555;
+    background-color: #282a36;
 }
 
 /* 
@@ -372,18 +386,6 @@ QGroupBox::title {
     padding: 2px 48px 2px 48px;
 }
 
-QTabWidget QAbstractItemView {
-    outline: 0px; /* Prohibit drawing the focus box 禁止Qt自动绘制焦点框 */
-    border: 1px solid #6272a4;
-}
-
-QTabWidget QAbstractItemView::item:selected, QTabWidget QAbstractItemView::item:hover {
-    color: #8be9fd;
-	background-color: #44475a;
-    margin: 1px;
-    border-radius: 4px;
-}
-
 /* 
  * QDoubleSpinBox:
  *     Floating-point value adjustment controls
@@ -488,24 +490,6 @@ QDialog#FindDialog QToolButton#recentSearches {
 
 QDialog#FindDialog QToolButton#recentSearches:hover {
     image: url(./src/history-2.png);
-}
-
-/* 
- * ToolConfig:
- *     Tool Configuration (Preference -> Typesetting -> Edit)
- *     工具配置(首选项 -> 排版 -> 编辑)
- */
-ToolConfig QAbstractItemView {
-    outline: 0px; /* Prohibit drawing the focus box 禁止Qt自动绘制焦点框 */
-    border: 1px solid #6272a4;
-    alternate-background-color: #282a36;
-}
-
-ToolConfig QAbstractItemView::item:selected, ToolConfig QAbstractItemView::item:hover {
-    color: #8be9fd;
-	background-color: #44475a;
-    margin: 1px;
-    border-radius: 4px;
 }
 
 /* 
