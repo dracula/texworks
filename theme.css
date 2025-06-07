@@ -613,6 +613,7 @@ QTreeView::branch:open:has-children:hover {
  */
 QListView {
     outline: 0px;
+    border: 1px solid #6272a4;
 }
 
 QListView::item:selected, QListView::item:hover {
