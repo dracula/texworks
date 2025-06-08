@@ -47,17 +47,17 @@
 # LaTeX packages
  #FF79C6	N	\\usepackage
 
+# math modes
+ #BD93F9;B	 N	[$^_]|\\\(|\\\)|\\\[|\\\]
+
 # control sequences
- #8BE9FD	N	\\(?![\[\]()])(?:[\p{L}@]+|.)
+ #8BE9FD	N	\\(?:[\p{L}@]+|.)
 
 # comments
  #6272A4		Y	%.*
 
 # URLs
  #FFB86C;IU	 N	(?:https?|ftps?):\/\/[^\s{}[\]<>\\"]+
-
-# math modes
- #BD93F9;B	 N	[$^_]|\\\(|\\\)|\\\[|\\\]
 
 # mandatory arguments
  #FFB86C;I	 N	(?<=\{)[^{}\\]*?(?=\})
