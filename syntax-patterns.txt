@@ -103,7 +103,7 @@ darkred      N   \&[a-zA-Z\_\-]+\;
 [BibTeX]
 
 # citation keys
- #BD93F9	N	(?<=\w\{)[^,{}]+(?=,)
+ #BD93F9	N	(?<=\w\{)[^,{}]+(?=[,}])
 
 # fields keys
  #FF79C6	N	[a-zA-Z]+(?=\s*=)
