@@ -68,23 +68,28 @@
 [ConTeXt]
 
 # special characters
-red		N	[${}]
+ #BD93F9	N	[#{}\[\]&]
 
-# 'other' special characters
-sienna	N	[=\[\]#<>"']
-
-# mathematical operations
-orange		N	[\-+/^_]
+# math modes
+ #BD93F9;B	 N	[$^_]|\\math(?={)|\\m(?={)
 
 # start/stop
-olive;B	N	\\(?:start|stop)[A-Za-z]+
+ #50FA7B	N	\\(?:start|stop)[A-Za-z]+
 
 # control sequences
-royalblue;B		N	\\(?:[\p{L}@\?\!]+|.)
+ #8BE9FD		N	\\(?:[\p{L}@\?\!]+|.)
+
+# URLs
+ #FFB86C;IU	 N	(?:https?|ftps?):\/\/[^\s{}[\]<>\\"]+
+
+# positional arguments
+ #FFB86C;I	 N	(?<={)[^{}\\]*?(?=})
+
+# key-value options
+ #F1FA8C;I	 N	(?<=\[)[^\[\]\\]*?(?=\])
 
 # comments
-gray		Y	%.*
-
+ #6272A4		Y	%.*
 
 [ConTeXt XML]
 
