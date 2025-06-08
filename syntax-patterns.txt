@@ -60,7 +60,7 @@
  #FFB86C;IU	 N	(?:https?|ftps?):\/\/[^\s{}[\]<>\\"]+
 
 # mandatory arguments
- #FFB86C;I	 N	(?<=\{)[^{}\\]*?(?=\})
+ #FFB86C;I	 N	(?<={)[^{}\\]*?(?=})
 
 # optional arguments
  #F1FA8C;I	 N	(?<=\[)[^\[\]\\]*?(?=\])
@@ -103,7 +103,7 @@ darkred      N   \&[a-zA-Z\_\-]+\;
 [BibTeX]
 
 # citation keys
- #BD93F9	N	(?<=\w\{)[^,{}]+(?=[,}])
+ #BD93F9	N	(?<=\w{)[^,{}]+(?=[,}])
 
 # fields keys
  #FF79C6	N	[a-zA-Z]+(?=\s*=)
@@ -121,7 +121,7 @@ darkred      N   \&[a-zA-Z\_\-]+\;
  #FFB86C;IU	 N	(?:https?|ftps?):\/\/[^\s{}[\]<>\\"]+
 
 # fields values
- #FFB86C;I	N	(?<=\{)[^\\]+(?=\})|(?<=")[^"\\]+(?=")
+ #FFB86C;I	N	(?<={)[^\\]+(?=})|(?<=")[^"\\]+(?=")
 
 [LaTeX DTX]
 
