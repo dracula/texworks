@@ -183,18 +183,30 @@
 
 [Lua]
 
-# Comments (single line only)
-gray		Y	--.*
+# comments (single line only)
+ #6272A4		Y	--.*
 
-# Strings
-olive		N	(?:\"(?:[^\"\\]|\\[\s\S])*(?:\"|$)|\'(?:[^\'\\]|\\[\s\S])*(?:\'|$))
-olive		N	\[(=*)\[[\s\S]*(?:\]\1\]|$)
+# strings
+ #F1FA8C		N	(?:\"(?:[^\"\\]|\\[\s\S])*(?:\"|$)|\'(?:[^\'\\]|\\[\s\S])*(?:\'|$))
+ #F1FA8C		N	\[(=*)\[[\s\S]*(?:\]\1\]|$)
 
-# Keywords
-royalblue;B		N	\b(?:and|break|do|else|elseif|end|false|for|function|if|in|local|nil|not|or|repeat|return|then|true|until|while)\b
+# keywords
+ #FF79C6		N	\b(?:and|break|do|else|elseif|end|false|for|function|if|in|local|nil|not|or|repeat|return|then|true|until|while)\b
 
-# Numbers
-mediumorchid	N	[+-]?(?:0x[\da-f]+|(?:(?:\.\d+|\d+(?:\.\d*)?)(?:e[+\-]?\d+)?))
+# numbers
+ #BD93F9	N	[+-]?(?:0x[\da-fA-F]+|(?:(?:\.\d+|\d+(?:\.\d*)?)(?:e[+\-]?\d+)?))
+
+# functions
+ #50FA7B	N	\w+(?=\s*\()
+
+# URLs
+ #FFB86C;IU	 N	(?:https?|ftps?):\/\/[^\s{}[\]<>\\"]+
+
+# arguments
+ #FFB86C;I	 N	(?<=\()[^\(\)]*(?=\))
+
+# special characters
+ #FF79C6		N	[#%^+=\-\*\/\>\<]|~=
 
 # other possibilities to be added....
 # [Metapost]
