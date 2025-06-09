@@ -1,26 +1,25 @@
-# Dracula for [Foobar](https://foobar.com)
+# Dracula for [TeXworks](https://tug.org/texworks/)
 
-> A dark theme for [Foobar](https://foobar.com).
+> A dark theme for [TeXworks](https://tug.org/texworks/).
 
-![Screenshot](./screenshot.png)
+![Screenshot](./screenshots/LaTeX.png)
+
+> [!TIP]
+> Only the code highlighting effect for LaTeX documents is shown here. Other images in the folder `screenshots` show the effects on the corresponding types of documents.
 
 ## Install
 
-All instructions can be found at [draculatheme.com/foobar](https://draculatheme.com/foobar).
+All instructions can be found at [`INSTALL.md`](./INSTALL.md).
+
+## Notice
 
 ## Team
 
-This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/foobar/graphs/contributors).
+This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/chataeseok/texworks/graphs/contributors).
 
-| [![Zeno Rocha](https://github.com/zenorocha.png?size=100)](https://github.com/zenorocha) | [![Lucas de França](https://github.com/luxonauta.png?size=100)](https://github.com/luxonauta) |
-| ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| [Zeno Rocha](https://github.com/zenorocha)                                               | [Lucas de França](https://github.com/luxonauta)                                               |
-
-## Community
-
-- [Twitter](https://twitter.com/draculatheme) - Best for getting updates about themes and new stuff.
-- [GitHub](https://github.com/dracula/dracula-theme/discussions) - Best for asking questions and discussing issues.
-- [Discord](https://draculatheme.com/discord-invite) - Best for hanging out with the community.
+| [![Wᴏɴɢ Chung](https://github.com/chataeseok.png?size=100)](https://github.com/zenorocha) |
+| --- |
+| [Wᴏɴɢ Chung](https://github.com/chataeseok) |
 
 ## Dracula PRO
 
@@ -28,4 +27,4 @@ This theme is maintained by the following person(s) and a bunch of [awesome cont
 
 ## License
 
-[MIT License](./LICENSE)
+[GPL-3.0 License](./LICENSE)
