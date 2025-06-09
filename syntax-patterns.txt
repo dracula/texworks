@@ -60,10 +60,10 @@
  #FFB86C;IU	 N	(?:https?|ftps?):\/\/[^\s{}[\]<>\\"]+
 
 # mandatory arguments
- #FFB86C;I	 N	(?<={)[^{}\\]*?(?=})
+ #FFB86C;I	 N	(?<={)[^{}\\]*(?=})
 
 # optional arguments
- #F1FA8C;I	 N	(?<=\[)[^\[\]\\]*?(?=\])
+ #F1FA8C;I	 N	(?<=\[)[^\[\]\\]*(?=\])
 
 [ConTeXt]
 
@@ -83,10 +83,10 @@
  #FFB86C;IU	 N	(?:https?|ftps?):\/\/[^\s{}[\]<>\\"]+
 
 # positional arguments
- #FFB86C;I	 N	(?<={)[^{}\\]*?(?=})
+ #FFB86C;I	 N	(?<={)[^{}\\]*(?=})
 
 # key-value options
- #F1FA8C;I	 N	(?<=\[)[^\[\]\\]*?(?=\])
+ #F1FA8C;I	 N	(?<=\[)[^\[\]\\]*(?=\])
 
 # comments
  #6272A4		Y	%.*
