@@ -95,15 +95,32 @@
 
 # todo: attributes
 
-darkred      N   \<\?xml.*\?\>
-darkblue     N   \<\!\-\-.*\-\-\>
-darkblue     N   [\"\']
-goldenrod    N   \<\?.*\?\>
-darkgreen    N   \<\/*[a-zA-Z\_\-]*\:*[a-zA-Z\_\-]+
-darkgreen    N   \/\>
-darkgreen    N   \>
-darkred      N   \&[a-zA-Z\_\-]+\;
+# XML declaration
+ #8BE9FD      N   \<\?xml.*\?\>
 
+# comments (single line only)
+ #6272A4     N   \<\!\-\-.*\-\-\>
+
+# URLs
+ #FFB86C;IU	 N	(?:https?|ftps?):\/\/[^\s{}[\]<>\\"]+
+
+# attribute values with delimiters
+ #F1FA8C     N   \".*\"|\'.*\'
+
+# processing instructions (generic)
+ #FFB86C    N   \<\?.*\?\>
+
+# attribute names
+ #50FA7B;I	N	[a-zA-Z]+(?=\s*=)
+
+# element tag names (with optional namespaces)
+ #FF79C6     N   (?<=\<|\<\/)[a-zA-Z\_\-]*\:*[a-zA-Z\_\-]+(?=[\s\>]|\/\>)
+
+# DTDs (document type definitions)
+ #FF79C6;B     N   (?<=\<\!)[a-zA-Z]+
+
+# entity references
+ #BD93F9      N   &(#\d+|#x[a-fA-F\d]+|[A-Za-z_][\w\-.]*);
 
 [BibTeX]
 
