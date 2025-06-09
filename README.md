@@ -5,7 +5,7 @@
 ![Screenshot](./screenshots/LaTeX.png)
 
 > [!TIP]
-> Only the code highlighting effect for LaTeX documents is shown here. Other images in the folder [`screenshots`](./screenshots) show the effects on the corresponding types of documents.
+> Only LaTeX documents' syntax highlighting effect is shown here. Other images in the folder [`screenshots`](./screenshots) show the effects on the corresponding types of documents.
 
 ## Install
 
