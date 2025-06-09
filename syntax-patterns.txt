@@ -148,32 +148,38 @@
 [LaTeX DTX]
 
 # comments
-red		Y	\^\^A.*
+ #6272A4		Y	\^\^A.*
 
-# Guards
-darkviolet		N	^%<@@=[^>]*>
-limegreen		N	^%<\*[^>]*>
-crimson		N	^%</[^>]*>
-brown		N	^%<<
-orange		N	^%<[^>]*>
+# guards
+ #F1FA8C		N	^%<@@=[^>]*>
+ #FFB86C		N	^%<\*[^>]*>
+ #FF79C6		N	^%</[^>]*>
+
+# The following two guards seem to be rarely used nowadays
+# so their colors were set to be the same as comment pattern
+ #6272A4;B		N	^%<<
+ #6272A4;B		N	^%<[^>]*>
 
 # special characters
-darkred		N	\^\^\^\^\^[0-9a-z]{5}
-darkred		N	\^\^\^\^[0-9a-z]{4}
-darkred		N	\^\^\^[0-9a-z]{3}
-darkred		N	\^\^[0-9a-z]{2}
-darkred		N	[$#^_{}&]
-gray		N	^%%.*
-gray		N	^%
+ #BD93F9		N	\^\^\^\^\^[0-9a-z]{5}
+ #BD93F9		N	\^\^\^\^[0-9a-z]{4}
+ #BD93F9		N	\^\^\^[0-9a-z]{3}
+ #BD93F9		N	\^\^[0-9a-z]{2}
+ #BD93F9		N	[$#^_{}&]
 
-# Macrocode
-green		N	\\(?:begin|end)\{macrocode\}
+# The following two special characters seem to be generally used for code comments
+# so their colors were also set to be the same as comment pattern
+ #6272A4		Y	^%%.*
+ #6272A4		Y	^%
+
+# macrocode
+ #FF5555		N	\\(?:begin|end)\{macrocode\}
 
 # LaTeX environments
-olive	N	\\(?:begin|end)\s*\{[^}]*\}
+ #50FA7B	N	\\(?:begin|end)\s*\{[^}]*\}
 
 # control sequences
-royalblue		N	\\(?:[\p{L}@:_]+|.)
+ #8BE9FD		N	\\(?:[\p{L}@:_]+|.)
 
 [Lua]
 
