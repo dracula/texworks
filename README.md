@@ -5,13 +5,14 @@
 ![Screenshot](./screenshots/LaTeX.png)
 
 > [!TIP]
-> Only LaTeX documents' syntax highlighting effect is shown here. Other images in the folder [`screenshots`](./screenshots) show the effects on the corresponding types of documents.
+> Only documents' syntax highlighting effect applying to $\LaTeX$ documents is shown here. More images demonstrating support for other document types can be found in the [`screenshots`](./screenshots) folder.
 
 ## Install
 
 All instructions can be found at [`INSTALL.md`](./INSTALL.md).
 
-## Notice
+> [!NOTE]
+> This is an **unofficial** workaround for TeXworks theme, so it's suggested to read the [`NOTICE`](./NOTICE.md) file to learn more.
 
 ## Team
 
