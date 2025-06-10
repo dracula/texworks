@@ -1,15 +1,24 @@
-This project includes code from the following source:
+NOTICE
 
-- darkbg.css from texworks-dark-theme (https://github.com/ezellohar/texworks-dark-theme, under GPL-3.0)
-- syntax-patterns.txt from texworks (https://github.com/TeXworks/texworks, under GPL-2.0)
+This project includes codes from the following sources:
 
-Modifications:
+- darkbg.css from texworks-dark-theme  
+  https://github.com/ezellohar/texworks-dark-theme  
+  Licensed under GPL-3.0
+
+- syntax-patterns.txt from TeXworks  
+  https://github.com/TeXworks/texworks  
+  Licensed under GPL-2.0
+
+Modifications made in this project:
+
 - Renamed original CSS file to theme.css
 - Redesigned UI appearance
-- Updated palettes based on Dracula Color Palette Standard
-- Updated patterns syntax setting based on Dracula Syntax Highlighting Specification
-- Added and Updated comments
+- Updated palettes based on the Dracula Color Palette Standard
+- Updated pattern syntax settings based on the Dracula Specification
+- Added and updated comments
 
-Original copyrights belongs to the original authors.
+Original copyrights belong to the respective authors. Here, I would like to express my gratitude and respect to them.
 
-All changes are copyrighted © 2025 by Wᴏɴɢ Chung and licensed under GPL-3.0, see the file LICENSE for details.
+All the above changes are © 2025 by Wᴏɴɢ Chung  
+Licensed under GPL-3.0 (see the LICENSE file for full terms).
