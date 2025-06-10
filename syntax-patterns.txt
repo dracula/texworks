@@ -1,6 +1,6 @@
 # Original Work: syntax-patterns.txt from texworks (https://github.com/TeXworks/texworks)
 # Original copyright © Stefan Löffler, Jonathan Kew, and Charlie Sharpsteen, 2007-2025
-# Modifications by Wᴏɴɢ Chung, 2025-05-16 (1st modification)
+# Modifications by Wᴏɴɢ Chung since 2025-05-16 (last updated: 2025-06-10)
 # Licensed under GNU General Public License v3.0 (GPL-3.0)
 
 # TeXworks: Patterns for syntax coloring
@@ -38,129 +38,130 @@
 
 [LaTeX]
 
-# special characters
+# special characters    特殊符号
  #BD93F9		N	[#{}\[\]&]
 
-# LaTeX environments
+# LaTeX environments    LaTeX环境
  #50FA7B	N	\\(?:begin|end)
 
-# LaTeX packages
+# LaTeX packages    LaTeX宏包
  #FF79C6	N	\\usepackage
 
-# math modes
+# math modes    数学模式
  #BD93F9;B	 N	[$^_]|\\\(|\\\)|\\\[|\\\]
 
-# control sequences
+# control sequences    控制序列
  #8BE9FD	N	\\(?:[\p{L}@]+|.)
 
-# comments
+# comments    代码注释
  #6272A4		Y	%.*
 
 # URLs
  #FFB86C;IU	 N	(?:https?|ftps?):\/\/[^\s{}[\]<>\\"]+
 
-# mandatory arguments
+# mandatory arguments    必选参数
  #FFB86C;I	 N	(?<={)[^{}\\]*(?=})
 
-# optional arguments
+# optional arguments    可选参数
  #F1FA8C;I	 N	(?<=\[)[^\[\]\\]*(?=\])
 
 [ConTeXt]
 
-# special characters
+# special characters    特殊符号
  #BD93F9	N	[#{}\[\]&]
 
-# math modes
+# math modes    数学模式
  #BD93F9;B	 N	[$^_]|\\math(?={)|\\m(?={)
 
-# start/stop
+# start/stop    start/stop命令
  #50FA7B	N	\\(?:start|stop)[A-Za-z]+
 
-# control sequences
+# control sequences    控制序列
  #8BE9FD		N	\\(?:[\p{L}@\?\!]+|.)
 
 # URLs
  #FFB86C;IU	 N	(?:https?|ftps?):\/\/[^\s{}[\]<>\\"]+
 
-# positional arguments
+# positional arguments    位置参数
  #FFB86C;I	 N	(?<={)[^{}\\]*(?=})
 
-# key-value options
+# key-value options     键-值选项
  #F1FA8C;I	 N	(?<=\[)[^\[\]\\]*(?=\])
 
-# comments
+# comments    代码注释
  #6272A4		Y	%.*
 
 [ConTeXt XML]
 
 # todo: attributes
 
-# XML declaration
+# XML declaration     XML声明
  #8BE9FD      N   \<\?xml.*\?\>
 
-# comments (single line only)
+# comments (single line only)    代码注释(仅支持单行)
  #6272A4     N   \<\!\-\-.*\-\-\>
 
 # URLs
  #FFB86C;IU	 N	(?:https?|ftps?):\/\/[^\s{}[\]<>\\"]+
 
-# attribute values with delimiters
+# attribute values with delimiters    参数值(带引号标识符)
  #F1FA8C     N   \".*\"|\'.*\'
 
-# processing instructions (generic)
+# processing instructions (generic)    (通用的)处理指令
  #FFB86C    N   \<\?.*\?\>
 
-# attribute names
+# attribute names    参数名
  #50FA7B;I	N	[a-zA-Z]+(?=\s*=)
 
-# element tag names (with optional namespaces)
+# element tag names (with optional namespaces)    元素标签名(带有命名空间)
  #FF79C6     N   (?<=\<|\<\/)[a-zA-Z\_\-]*\:*[a-zA-Z\_\-]+(?=[\s\>]|\/\>)
 
-# DTDs (document type definitions)
+# DTDs (document type definitions)    文档类型定义
  #FF79C6;B     N   (?<=\<\!)[a-zA-Z]+
 
-# entity references
+# entity references    实体引用
  #BD93F9      N   &(#\d+|#x[a-fA-F\d]+|[A-Za-z_][\w\-.]*);
 
 [BibTeX]
 
-# citation keys
+# citation keys    引用键
  #BD93F9	N	(?<=\w{)[^,{}\\]+(?=[,}])
 
-# fields keys
+# fields keys    字段名
  #FF79C6	N	[a-zA-Z]+(?=\s*=)
 
-# entries
+# entries    文献类型
  #50FA7B	N	@[^{]+
 
-# comments
+# comments    代码注释
  #6272A4		Y	%.*
 
-# control sequences (mainly character encoding here)
+# control sequences (mainly character encoding here)    控制序列(在此主要是字符转码)
  #8BE9FD	N	\\(?:[\p{L}@]+|.[\p{L}]+|.)
 
 # URLs
  #FFB86C;IU	 N	(?:https?|ftps?):\/\/[^\s{}[\]<>\\"]+
 
-# fields values
+# fields values    字段值
  #FFB86C;I	N	(?<={)[^\\]+(?=})|(?<=")[^"\\]+(?=")
 
 [LaTeX DTX]
 
-# comments
+# comments    代码注释
  #6272A4		Y	\^\^A.*
 
-# guards
+# guards    守卫(条件包围区)
  #F1FA8C		N	^%<@@=[^>]*>
  #FFB86C		N	^%<\*[^>]*>
  #FF79C6		N	^%</[^>]*>
 
 # The following two guards seem to be rarely used nowadays
 # so their colors were set to be the same as comment pattern
+# 以下两种守卫现如今似乎很少用,所以其颜色被设为和注释的相同
  #6272A4;B		N	^%<<
  #6272A4;B		N	^%<[^>]*>
 
-# special characters
+# special characters    特殊符号
  #BD93F9		N	\^\^\^\^\^[0-9a-z]{5}
  #BD93F9		N	\^\^\^\^[0-9a-z]{4}
  #BD93F9		N	\^\^\^[0-9a-z]{3}
@@ -169,43 +170,44 @@
 
 # The following two special characters seem to be generally used for code comments
 # so their colors were also set to be the same as comment pattern
+# 以下两种特殊符号似乎一般用于注释,所以其颜色被设为和注释的相同
  #6272A4		Y	^%%.*
  #6272A4		Y	^%
 
-# macrocode
+# macrocode    宏代码环境
  #FF5555		N	\\(?:begin|end)\{macrocode\}
 
-# LaTeX environments
+# LaTeX environments    LaTeX环境
  #50FA7B	N	\\(?:begin|end)\s*\{[^}]*\}
 
-# control sequences
+# control sequences    控制序列
  #8BE9FD		N	\\(?:[\p{L}@:_]+|.)
 
 [Lua]
 
-# comments (single line only)
+# comments (single line only)    代码注释(仅支持单行)
  #6272A4		Y	--.*
 
-# strings
+# strings    字符串
  #F1FA8C		N	(?:\"(?:[^\"\\]|\\[\s\S])*(?:\"|$)|\'(?:[^\'\\]|\\[\s\S])*(?:\'|$))
  #F1FA8C		N	\[(=*)\[[\s\S]*(?:\]\1\]|$)
 
-# keywords
+# keywords    关键字
  #FF79C6		N	\b(?:and|break|do|else|elseif|end|false|for|function|if|in|local|nil|not|or|repeat|return|then|true|until|while)\b
 
-# numbers
+# numbers    数字
  #BD93F9	N	[+-]?(?:0x[\da-fA-F]+|(?:(?:\.\d+|\d+(?:\.\d*)?)(?:e[+\-]?\d+)?))
 
-# functions
+# functions    函数
  #50FA7B	N	\w+(?=\s*\()
 
 # URLs
  #FFB86C;IU	 N	(?:https?|ftps?):\/\/[^\s{}[\]<>\\"]+
 
-# arguments
+# arguments    参数
  #FFB86C;I	 N	(?<=\()[^\(\)]*(?=\))
 
-# special characters
+# special characters    特殊符号
  #FF79C6		N	[#%^+=\-\*\/\>\<]|~=
 
 # other possibilities to be added....
