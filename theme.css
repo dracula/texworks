@@ -60,8 +60,7 @@ QComboBox::drop-down {
     image: url(./src/down-arrow.png);
     width: 16px;
     height: 16px;
-    margin-top: 2px;
-    margin-right: 3px;
+    margin: 2px 3px 0 0;
     border-radius: 10px;
     padding: 2px;
 }
@@ -83,7 +82,6 @@ QComboBox::drop-down:hover {
 QAbstractItemView {
     outline: 0; /* Prohibit drawing the focus box 禁止Qt自动绘制焦点框 */
     border: 1px solid #6272a4;
-    background-color: #282a36;
     alternate-background-color: #282a36;
 }
 
@@ -149,17 +147,17 @@ QMenu::item:selected, QMenu::item:hover {
  *     It is the moving part
  *     滑块部分
  * add-line (or sub-line):
- *     The region where the arrow is drawn. If no image is embedded, the arrow is a dot.
+ *     The region where the arrow is drawn. If no image is embedded, the arrow is a dot
  *     下滑箭头所在区域(若无图片则显示圆点)
  */
 QScrollBar:vertical {
     width: 16px;
-    margin: 16px 3px 16px 3px;
+    margin: 16px 3px;
     border-radius: 5px;
 }
 
 QScrollBar:vertical:hover {
-    background: #44475a;
+    background-color: #44475a;
 }
 
 QScrollBar::handle:vertical {
@@ -174,7 +172,7 @@ QScrollBar::handle:vertical:hover {
 
 /* 
  * This seems useless, but it is actually quite important
- * -- it makes the scroll bar's background a uniform color instead of tiny dots, if it were removed.
+ * -- it makes the scroll bar's background a uniform color instead of tiny dots, if it were removed
  * 此属性看似无用，实则关键——移除后滚动条背景会变成散点而非纯色
  */
 QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical { 
@@ -225,12 +223,12 @@ QScrollBar::down-arrow:vertical:hover {
  */
 QScrollBar:horizontal {
     height: 16px;
-    margin: 3px 16px 3px 16px;
+    margin: 3px 16px;
     border-radius: 5px;
 }
 
 QScrollBar:horizontal:hover {
-    background: #44475a;
+    background-color: #44475a;
 }
 
 QScrollBar::handle:horizontal {
@@ -262,7 +260,7 @@ QScrollBar::sub-line:horizontal {
 }
 
 QScrollBar::add-line:horizontal:hover, QScrollBar::sub-line:horizontal:hover {
-	background: #44475a;
+	background-color: #44475a;
 }
 
 QScrollBar:left-arrow:horizontal {
@@ -383,7 +381,7 @@ QGroupBox::title {
     top: 4px;
     border-radius: 10px;
     min-width: 10ex;
-    padding: 2px 48px 2px 48px;
+    padding: 2px 48px;
 }
 
 /* 
@@ -459,8 +457,8 @@ QDoubleSpinBox::down-arrow:hover, QSpinBox::down-arrow:hover {
 QTabBar::tab {
     border-radius: 4px;
     min-width: 8ex;
-    padding: 4px 8px 4px 8px;
-    margin: 0 2px 2px 0px;
+    padding: 4px 8px;
+    margin: 0 2px 2px 0;
 }
 
 QTabBar::tab:hover {
@@ -529,6 +527,7 @@ QDockWidget::title {
     border-color: transparent;
     padding-left: 5px;
     padding-top: 5px;
+    padding: 5px 0 0 5px;
 }
 
 QDockWidget::close-button:hover {
@@ -596,7 +595,7 @@ QTreeView::branch:open:has-children:hover {
  *     列表视图控件(比如格式窗口中的字体设置)
  */
 QListView {
-    outline: 0px;
+    outline: 0;
     border: 1px solid #6272a4;
 }
 
@@ -616,7 +615,7 @@ QListView::item:selected, QListView::item:hover {
  *     表格视图控件的标题栏
  */
 QTableView {
-    outline: 0px;
+    outline: 0;
     border: 1px solid #6272a4;
     alternate-background-color: #282a36;
     selection-background-color: #44475a;
@@ -707,6 +706,5 @@ QPushButton:hover {
  *     屏幕 DPI 控件(首选项 -> 预览 -> 屏幕分辨率)
  */
 Tw--UI--ScreenCalibrationWidget {
-	color: #f8f8f2;
 	background-color: #44475a;
 }
