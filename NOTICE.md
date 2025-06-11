@@ -68,9 +68,9 @@ _Last updated: 2025-06-11_
 
 <details>
 
-</br>
-
   <summary>中文版</summary>
+
+</br>
 
 # 注意事项
 
