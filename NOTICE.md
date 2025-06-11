@@ -64,6 +64,8 @@ _Last updated: 2025-06-11_
 
 ---
 
+<a id="zh-CN"></a>
+
 <details>
 
 </br>
