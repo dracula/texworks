@@ -46,7 +46,7 @@ Stefan Loffler once [said](https://tug.org/pipermail/texworks/2011q2/004333.html
 
 > In fact, the string given in syntax-patterns.txt is simply wrapped into a QRegExp object (see src/TeXHighlighter.cpp at 226).
 
-Therefore, we can know syntax highlighting of TeXworks uses (somewhat) outdated `QtRegExp` instead of modern methods like TextMate Grammars or Semantic Highlighting found in other editors. It allows custom highlighting rules, providing flexibility and user control.
+Therefore, we can know TeXworks' syntax highlighting uses (somewhat) outdated `QtRegExp` instead of modern methods like TextMate Grammars or Semantic Highlighting found in other editors. It allows custom highlighting rules, providing flexibility and user control.
 
 However, this brings some restrictions. For example, as far as I know, it
 
@@ -60,7 +60,7 @@ On the other hand, while the current patterns for syntax highlighting of this pr
 
 ---
 
-_Last updated: 2025-06-11_
+_Last updated: 2025-06-12_
 
 ---
 
@@ -131,6 +131,6 @@ Stefan Löffler曾[表示](https://tug.org/pipermail/texworks/2011q2/004333.html
 
 ---
 
-_最后更新：2025-06-11_
+_最后更新：2025-06-12_
 
 </details>
