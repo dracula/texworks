@@ -2,6 +2,16 @@
 
 > This folder contains icon assets used in this project. Some of the images have been modified (remixed, color-adjusted, resized, or otherwise adapted) under the terms of their original licenses (as claimed by sources) to better fit this project. Details are provided below.
 
+<details>
+
+  <summary>中文版</summary>
+
+</br>
+
+> 此文件夹包含该项目中使用的图标素材。一些图像已被严格根据原始许可证（如来源所声明的）的条款修改（重新混合、调整颜色、调整大小或以其他方式改编），以更好地适应本项目。详情如下。
+
+</details>
+
 ## 1. `history.png` and `history-2.png`
 
 - **Original Author**: [Aleksey Popov](https://dribbble.com/AlekseyPopov)
@@ -54,4 +64,4 @@
 
 ---
 
-_Last updated: 2025-06-10_
+_Last updated: 2025-06-13_
