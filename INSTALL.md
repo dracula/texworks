@@ -20,7 +20,7 @@ Download using the [GitHub _.zip_ download](https://github.com/dracula/texworks/
 
 2. Find TeXworks' resource directory  `<Resources>`.
 
-> ℹ️ **Note A**
+> ℹ️ **Note A**  
 > You can open TeXworks editor if you don't know where the resource directory is: `Help` -> `Settings and Resources...` -> `Resources`
 
 3. Move the aforementioned three to `<Resources>/configuration`:
@@ -29,7 +29,7 @@ Download using the [GitHub _.zip_ download](https://github.com/dracula/texworks/
 mv syntax-patterns.txt theme.css src "<Resources>/configuration"
 ```
 
-> ℹ️ **Note B**
+> ℹ️ **Note B**  
 > `syntax-patterns.txt` **can not** be renamed or put on other paths! Its eponymous file already exists in `<Resources>/configuration`. This is the default file. You'd better back up the default file before overwriting.
 
 4. Every time you open TeXworks by following the operations below, Dracula theme can be successfully enabled!
@@ -38,7 +38,7 @@ mv syntax-patterns.txt theme.css src "<Resources>/configuration"
 <YourTeXworksPath>/texworks -stylesheet "<Resources>/configuration/theme.css"
 ```
 
-> ℹ️ **Note C**
+> ℹ️ **Note C**  
 > `theme.css` and `src` can be renamed or have their storage paths changed as long as the path changes are correct. If you decide to do so, don't forget that all the icon paths in the renamed _.css_ file need to be changed as well.
 
 #### Advanced Configuration (optionally)

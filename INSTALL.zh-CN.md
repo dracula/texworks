@@ -20,7 +20,7 @@ git clone https://github.com/dracula/texworks.git
 
 2. 找到 TeXworks 的资源目录 `<Resources>`。
 
-> ℹ️ **Note A**
+> ℹ️ **Note A**  
 > 如果你不知道该资源目录在哪里，可以启动 TeXworks 编辑器：`帮助` -> `TeXworks 配置与资源` -> `资源`
 
 3. 将前述三者移至 `<Resources>/configuration` 中：
@@ -29,7 +29,7 @@ git clone https://github.com/dracula/texworks.git
 mv syntax-patterns.txt theme.css src "<Resources>/configuration"
 ```
 
-> ℹ️ **Note B**
+> ℹ️ **Note B**  
 > `syntax-patterns.txt` **不可**被重命名或放至其他路径！`<Resources>/configuration`中已经存在它的同名文件，这是默认文件。你最好在覆盖前备份该默认文件。
 
 4. 每当你按如下操作打开 TeXworks 时，Dracula 主题就能成功启用了！
@@ -38,14 +38,14 @@ mv syntax-patterns.txt theme.css src "<Resources>/configuration"
 <YourTeXworksPath>/texworks -stylesheet "<Resources>/configuration/theme.css"
 ```
 
-> ℹ️ **Note C**
+> ℹ️ **Note C**  
 > `theme.css` 和 `src` 可以被重命名或更换存放路径，只要保证路径更改正确。若你决定这么做的话，别忘了重命名后的 _.css_ 中的所有图标路径也需一并更改。
 
 #### 高级设置（可选）
 
 若你觉得每次用打开 TeXworks 需要命令行添加可选参数 `-stylesheet` 的方法太麻烦，可以选择执行以下操作。
 
-> ❗ **Caution**
+> ❗ **Caution**  
 > 若涉及到全局设置的修改，请一定要提前备份相关文件！
 
 - **Windows**
