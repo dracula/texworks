@@ -1,11 +1,13 @@
 # Dracula for [TeXworks](https://tug.org/texworks/)
 
+[![README.zh-CN](https://img.shields.io/badge/README-%E4%B8%AD%E6%96%87%E7%89%88-8BE9FD?style=flat-square&logo=ReadMe&logoColor=8BE9FD&labelColor=282A36)](./README.zh-CN.md)
+
 > A dark theme for [TeXworks](https://tug.org/texworks/).
 
 ![Screenshot](./screenshots/LaTeX.png)
 
 > [!TIP]
-> Only documents' syntax highlighting effect applying to $\LaTeX$ documents is shown here. More images demonstrating support for other document types can be found in the [`screenshots`](./screenshots) folder.
+> Only syntax highlighting effect applying to $\LaTeX$ documents is shown here. More images demonstrating for other document types can be found in the [`screenshots`](./screenshots) folder. They're just for display purposes and **do not represent** the grammatical correctness and compilability of the documents shown.
 
 ## Install
 
@@ -16,7 +18,7 @@ All instructions can be found at [`INSTALL.md`](./INSTALL.md).
 
 ## Team
 
-This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/chataeseok/texworks/graphs/contributors).
+This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/texworks/graphs/contributors).
 
 | [![Wᴏɴɢ Chung](https://github.com/chataeseok.png?size=100)](https://github.com/zenorocha) |
 | --- |
