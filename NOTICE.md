@@ -14,7 +14,7 @@ This project includes code from the following sources:
 
 - [`darkbg.css`](https://github.com/ezellohar/texworks-dark-theme/blob/main/darkbg.css)
 
-  - **Author**: GitHub user [ezellohar](https://github.com/ezellohar)
+  - **Author**: [@ezellohar](https://github.com/ezellohar)
 
   - **License**: GPL-3.0
 
@@ -60,7 +60,7 @@ On the other hand, while the current patterns for syntax highlighting of this pr
 
 ---
 
-_Last updated: 2025-06-12_
+_Last updated: 2025-06-23_
 
 ---
 
@@ -88,7 +88,7 @@ _Last updated: 2025-06-12_
 
 * [`darkbg.css`](https://github.com/ezellohar/texworks-dark-theme/blob/main/darkbg.css)
 
-  * **作者**：GitHub 用户 [ezellohar](https://github.com/ezellohar)
+  * **作者**：[@ezellohar](https://github.com/ezellohar)
   * **许可协议**：GPL-3.0
 
 * [`syntax-patterns.txt`](https://github.com/TeXworks/texworks/blob/main/res/resfiles/configuration/syntax-patterns.txt)
@@ -131,6 +131,6 @@ Stefan Löffler曾[表示](https://tug.org/pipermail/texworks/2011q2/004333.html
 
 ---
 
-_最后更新：2025-06-12_
+_最后更新：2025-06-23_
 
 </details>
