@@ -1,7 +1,7 @@
 /* 
  * Original Work: darkbg.css from texworks-dark-theme (https://github.com/ezellohar/texworks-dark-theme)
  * Original copyright © @ezellohar (https://github.com/ezellohar)
- * Modifications by Wᴏɴɢ Chung since 2025-05-13 (last updated: 2025-06-10)
+ * Modifications by Wᴏɴɢ Chung since 2025-05-13 (last updated: 2025-06-23)
  * Licensed under GNU General Public License v3.0 (GPL-3.0)
  */
 
@@ -85,7 +85,7 @@ QAbstractItemView {
     alternate-background-color: #282a36;
 }
 
-QAbstractItemView::item:selected, QAbstractItemView::item:hover {
+QAbstractItemView::item:selected, QAbstractItemView::item:hover, QAbstractItemView::item:focus {
     color: #8be9fd;
 	background-color: #44475a;
     margin: 1px;
@@ -585,23 +585,6 @@ QTreeView::branch:closed:has-children:hover {
 QTreeView::branch:open:has-children:hover {
     image: url(./src/expand-2.png);
     background-color: #44475a;
-    margin: 1px;
-    border-radius: 4px;
-}
-
-/* 
- * QListView:
- *     List view controls (e.g. font settings in the format window)
- *     列表视图控件(比如格式窗口中的字体设置)
- */
-QListView {
-    outline: 0;
-    border: 1px solid #6272a4;
-}
-
-QListView::item:selected, QListView::item:hover {
-    color: #8be9fd;
-	background-color: #44475a;
     margin: 1px;
     border-radius: 4px;
 }
