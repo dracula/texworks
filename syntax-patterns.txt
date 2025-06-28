@@ -1,6 +1,6 @@
 # Original Work: syntax-patterns.txt from texworks (https://github.com/TeXworks/texworks)
 # Original copyright © Stefan Löffler, Jonathan Kew, and Charlie Sharpsteen, 2007-2025
-# Modifications by Wᴏɴɢ Chung since 2025-05-16 (last updated: 2025-06-10)
+# Modifications by Wᴏɴɢ Chung since 2025-05-16 (last updated: 2025-06-28)
 # Licensed under GNU General Public License v3.0 (GPL-3.0)
 
 # TeXworks: Patterns for syntax coloring
@@ -42,10 +42,10 @@
  #BD93F9		N	[#{}\[\]&]
 
 # LaTeX environments    LaTeX环境
- #50FA7B	N	\\(?:begin|end)
+ #50FA7B	N	\\(?:begin|end)(?=\P{L})
 
 # LaTeX packages    LaTeX宏包
- #FF79C6	N	\\usepackage
+ #FF79C6	N	\\usepackage(?=\P{L})
 
 # math modes    数学模式
  #BD93F9;B	 N	[$^_]|\\\(|\\\)|\\\[|\\\]
