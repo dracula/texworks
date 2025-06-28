@@ -1,7 +1,7 @@
 /* 
  * Original Work: darkbg.css from texworks-dark-theme (https://github.com/ezellohar/texworks-dark-theme)
  * Original copyright © @ezellohar (https://github.com/ezellohar)
- * Modifications by Wᴏɴɢ Chung since 2025-05-13 (last updated: 2025-06-23)
+ * Modifications by Wᴏɴɢ Chung since 2025-05-13 (last updated: 2025-06-28)
  * Licensed under GNU General Public License v3.0 (GPL-3.0)
  */
 
@@ -477,8 +477,11 @@ QTabBar::tab:selected {
  *     Dialog windows
  *     对话窗口
  * QDialog#FindDialog:
- *     The search dialog window
- *     搜索对话窗口
+ *     The finding dialog window
+ *     查找对话窗口
+ * QDialog#ReplaceDialog:
+ *     The replacement dialog window
+ *     替换对话窗口
  */
 QDialog#FindDialog QToolButton#recentSearches {
     color: transparent; /* Hide the old icon 隐藏旧图标 */
@@ -487,6 +490,16 @@ QDialog#FindDialog QToolButton#recentSearches {
 }
 
 QDialog#FindDialog QToolButton#recentSearches:hover {
+    image: url(./src/history-2.png);
+}
+
+QDialog#ReplaceDialog QToolButton#recentSearches, QDialog#ReplaceDialog QToolButton#recentReplacements {
+    color: transparent;
+    image: url(./src/history.png);
+    padding: 1px;
+}
+
+QDialog#ReplaceDialog QToolButton#recentSearches:hover, QDialog#ReplaceDialog QToolButton#recentReplacements:hover {
     image: url(./src/history-2.png);
 }
 
