@@ -11,7 +11,7 @@
 
 ## Install
 
-All instructions can be found at [`INSTALL.md`](./INSTALL.md).
+All instructions can be found at [draculatheme.com/texworks](https://draculatheme.com/texworks).
 
 > [!NOTE]
 > This is an **unofficial** workaround for TeXworks theme, so it's suggested to read the [`NOTICE`](./NOTICE.md) file to learn more.

@@ -11,7 +11,7 @@
 
 ## 安装
 
-所有安装说明请参见 [`INSTALL.md`](./INSTALL.md)。
+所有说明都可以在 [draculatheme.com/texworks](https://draculatheme.com/texworks) 找到。
 
 > [!NOTE]  
 > 这是一个非官方的 设置 TeXworks 主题的变通方案，因此建议阅读 [`NOTICE`](./NOTICE.md) 文件以了解详情。
