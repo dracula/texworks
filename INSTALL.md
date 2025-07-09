@@ -1,6 +1,6 @@
 ### [TeXworks](https://tug.org/texworks/)
 
-👉[中文版](./INSTALL.zh-CN.md)
+👉[中文版](https://github.com/dracula/texworks/INSTALL.zh-CN.md)
 
 #### Install using Git
 
@@ -18,7 +18,7 @@ Download using the [GitHub _.zip_ download](https://github.com/dracula/texworks/
 
 1. Extract `syntax-patterns.txt` (syntax highlighting settings), `theme.css` (QSS configuration), and the `src` folder (icon assets), which are the necessary theme files
 
-2. Find TeXworks' resource directory  `<Resources>`.
+2. Find TeXworks' resource directory `<Resources>`.
 
 > ℹ️ **Note A**  
 > You can open TeXworks editor if you don't know where the resource directory is: `Help` -> `Settings and Resources...` -> `Resources`
@@ -87,15 +87,15 @@ If you find it inconvenient to manually add the optional `-stylesheet` argument 
 - **Linux** or **macOS**:
 
   To launch TeXworks in the theme by default, you can create an alias in your shell configuration file (e.g. `.bashrc`, `.zshrc`, or `.profile` on macOS):
-  
+
   ```bash
   alias texworks='texworks -stylesheet "/path/to/darkbg.css"'
   ```
 
   After saving the changes, reload your shell configuration with
-  
+
   ```bash
   source ~/.bashrc # or the respective file
   ```
-  
+
   and the alias will be ready to use.

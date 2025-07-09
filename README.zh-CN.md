@@ -21,12 +21,12 @@
 本主题由以下人员及众多 [热心贡献者](https://github.com/dracula/texworks/graphs/contributors) 共同维护：
 
 | [![Wᴏɴɢ Chung](https://github.com/chataeseok.png?size=100)](https://github.com/zenorocha) |
-| --- |
-| [Wᴏɴɢ Chung](https://github.com/chataeseok) |
+| ----------------------------------------------------------------------------------------- |
+| [Wᴏɴɢ Chung](https://github.com/chataeseok)                                               |
 
-## Dracula PRO  
+## Dracula PRO
 
-[![Dracula PRO](./.github/dracula-pro.png)](https://draculatheme.com/pro)  
+[![Dracula PRO](./.github/dracula-pro.png)](https://draculatheme.com/pro)
 
 ## 许可证
 

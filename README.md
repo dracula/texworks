@@ -21,8 +21,8 @@ All instructions can be found at [`INSTALL.md`](./INSTALL.md).
 This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/texworks/graphs/contributors).
 
 | [![Wᴏɴɢ Chung](https://github.com/chataeseok.png?size=100)](https://github.com/zenorocha) |
-| --- |
-| [Wᴏɴɢ Chung](https://github.com/chataeseok) |
+| ----------------------------------------------------------------------------------------- |
+| [Wᴏɴɢ Chung](https://github.com/chataeseok)                                               |
 
 ## Dracula PRO
 

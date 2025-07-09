@@ -1,6 +1,6 @@
 ### [TeXworks](https://tug.org/texworks/)
 
-👉[English](./INSTALL.md)
+👉[English](https://github.com/dracula/texworks/INSTALL.md)
 
 #### 使用 Git 安装
 
@@ -57,9 +57,9 @@ mv syntax-patterns.txt theme.css src "<Resources>/configuration"
   ```
 
   这使得你每次通过快捷方式文件打开 TeXworks 后能启用主题。然而直接打开 TeX 相关文档仍需完成全局设置。
-  
+
   若需如此，你需要`以管理员身份运行`打开`注册表编辑器`，给你的 TeX 发行版的项（一般位于 `Computers\HKEY_CLASSES_ROOT`）做更改。
-  
+
   ```
   MiKTeX.tex.2.9
     ├── DefaultIcon
@@ -67,13 +67,13 @@ mv syntax-patterns.txt theme.css src "<Resources>/configuration"
        └── open
           └── command
   ```
-  
+
   上图所示的注册表项目结构以 MiKTeX 为例。你要给注册表项
-  
+
   ```
   Computers\HKEY_CLASSES_ROOT\MiKTeX.tex.2.9\shell\open\command
   ```
-  
+
   的字符串值（类型为 _REG_SZ_，若没有则新建）的数据修改为：
 
   ```powershell
@@ -89,11 +89,11 @@ mv syntax-patterns.txt theme.css src "<Resources>/configuration"
   ```bash
   alias texworks='texworks -stylesheet "/path/to/darkbg.css"'
   ```
-  
+
   保存更改后，使用
-  
+
   ```bash
   source ~/.bashrc # 或对应配置文件名
   ```
-  
+
   刷新配置，即可启用该别名。
