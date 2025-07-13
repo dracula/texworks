@@ -1,6 +1,6 @@
 ### [TeXworks](https://tug.org/texworks/)
 
-👉[English](https://github.com/dracula/texworks/INSTALL.md)
+👉[English](https://github.com/dracula/texworks/blob/main/INSTALL.md)
 
 #### 使用 Git 安装
 
@@ -12,7 +12,7 @@ git clone https://github.com/dracula/texworks.git
 
 #### 手动安装
 
-下载来自 [GitHub 的 _.zip_ 压缩包](https://github.com/dracula/texworks/archive/main.zip)并将其解压。
+下载来自 [GitHub 的 `.zip` 压缩包](https://github.com/dracula/texworks/archive/main.zip)并将其解压。
 
 #### 启用主题
 

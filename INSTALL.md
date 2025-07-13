@@ -1,6 +1,6 @@
 ### [TeXworks](https://tug.org/texworks/)
 
-👉[中文版](https://github.com/dracula/texworks/INSTALL.zh-CN.md)
+👉[中文版](https://github.com/dracula/texworks/blob/main/INSTALL.zh-CN.md)
 
 #### Install using Git
 
@@ -12,7 +12,7 @@ git clone https://github.com/dracula/texworks.git
 
 #### Install manually
 
-Download using the [GitHub _.zip_ download](https://github.com/dracula/texworks/archive/main.zip) option and unzip them.
+Download using the [GitHub `.zip` download](https://github.com/dracula/texworks/archive/main.zip) option and unzip them.
 
 #### Activating theme
 
@@ -41,7 +41,7 @@ mv syntax-patterns.txt theme.css src "<Resources>/configuration"
 > ℹ️ **Note C**  
 > `theme.css` and `src` can be renamed or have their storage paths changed as long as the path changes are correct. If you decide to do so, don't forget that all the icon paths in the renamed _.css_ file need to be changed as well.
 
-#### Advanced Configuration (optionally)
+#### Advanced configuration (optionally)
 
 If you find it inconvenient to manually add the optional `-stylesheet` argument every time you launch TeXworks from the command line, you can follow the steps below for a more permanent solution.
 
