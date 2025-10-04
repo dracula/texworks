@@ -60,7 +60,7 @@ mv syntax-patterns.txt theme.css src "<Resources>/configuration"
 
   若需如此，你需要`以管理员身份运行`打开`注册表编辑器`，给你的 TeX 发行版的项（一般位于 `Computers\HKEY_CLASSES_ROOT`）做更改。
 
-  ```
+  ```bash
   MiKTeX.tex.2.9
     ├── DefaultIcon
     └── shell

@@ -62,7 +62,7 @@ If you find it inconvenient to manually add the optional `-stylesheet` argument 
 
   The following structure shows the example path for MiKTeX:
 
-  ```
+  ```bash
   MiKTeX.tex.2.9
     ├── DefaultIcon
     └── shell
